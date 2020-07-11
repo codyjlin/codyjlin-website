@@ -4,7 +4,7 @@ import imagesStyles from "assets/jss/nextjs-material-kit/imagesStyles.js";
 
 const typographyStyle = {
 	section: {
-		padding: "70px 0",
+		padding: "20px 0",
 	},
 	container,
 	space50: {
