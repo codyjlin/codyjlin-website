@@ -14,7 +14,7 @@ import image1 from "assets/img/bg.jpg";
 import image2 from "assets/img/bg2.jpg";
 import image3 from "assets/img/bg3.jpg";
 
-import styles from "assets/jss/nextjs-material-kit/pages/componentsSections/carouselStyle.js";
+import styles from "assets/jss/Index-Sections/TravelCarousel.js";
 
 const useStyles = makeStyles(styles);
 
@@ -31,7 +31,7 @@ export default function TravelCarousel() {
 	return (
 		<div className={classes.section}>
 			<div className={classes.container}>
-				<h1>Travel</h1>
+				<h2>Travel</h2>
 				<h4> Maybe write something here?, ...</h4>
 				<GridContainer>
 					<GridItem xs={12} sm={12} md={12} className={classes.marginAuto}>

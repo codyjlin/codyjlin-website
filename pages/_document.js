@@ -13,15 +13,30 @@ class MyDocument extends Document {
 						content="width=device-width, initial-scale=1, shrink-to-fit=no"
 					/>
 					<meta name="theme-color" content="#000000" />
-					{/* <link rel="shortcut icon" href={require("assets/img/favicon.png")} /> */}
-					<link rel="shortcut icon" href={require("public/favicon.ico")} />
-
+					<link rel="shortcut icon" href={require("public/favicon.png")} />
 					<link
 						rel="apple-touch-icon"
 						sizes="76x76"
-						// href={require("assets/img/apple-icon.png")}
-						href={require("public/favicon.ico")}
+						href={require("public/favicon76.png")}
 					/>
+					<link
+						rel="apple-touch-icon"
+						sizes="180x180"
+						href={require("public/favicon180.png")}
+					/>
+					<link
+						rel="icon"
+						type="image/png"
+						sizes="32x32"
+						href={require("public/favicon32.png")}
+					/>
+					<link
+						rel="icon"
+						type="image/png"
+						sizes="16x16"
+						href={require("public/favicon16.png")}
+					/>
+
 					{/* Fonts and icons */}
 					<link
 						rel="stylesheet"

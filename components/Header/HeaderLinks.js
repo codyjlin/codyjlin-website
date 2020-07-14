@@ -29,56 +29,35 @@ export default function HeaderLinks(props) {
 	const classes = useStyles();
 	return (
 		<List className={classes.list}>
-			{/* <ListItem className={classes.listItem}>
-        <CustomDropdown
-          noLiPadding
-          navDropdown
-          buttonText="Components"
-          buttonProps={{
-            className: classes.navLink,
-            color: "transparent"
-          }}
-          buttonIcon={Apps}
-          dropdownList={[
-            <Link href="/components">
-              <a className={classes.dropdownLink}>All components</a>
-            </Link>,
-            <a
-              href="https://creativetimofficial.github.io/nextjs-material-kit/#/documentation?ref=njsmk-navbar"
-              target="_blank"
-              className={classes.dropdownLink}
-            >
-              Documentation
-            </a>
-          ]}
-        />
-      </ListItem> */}
 			<ListItem className={classes.listItem}>
-				<Button
-					href="/projects"
-					color={(props.type == "projects" && "default") || "transparent"}
-					className={classes.navLink}
-				>
-					<Build className={classes.icons} /> Projects
-				</Button>
+				<Link href="/projects">
+					<Button
+						color={(props.type == "projects" && "default") || "transparent"}
+						className={classes.navLink}
+					>
+						<Build className={classes.icons} /> Projects
+					</Button>
+				</Link>
 			</ListItem>
 			<ListItem className={classes.listItem}>
-				<Button
-					href="/travel"
-					color={(props.type == "travel" && "default") || "transparent"}
-					className={classes.navLink}
-				>
-					<PublicIcon className={classes.icons} /> Travel
-				</Button>
+				<Link href="/travel">
+					<Button
+						color={(props.type == "travel" && "default") || "transparent"}
+						className={classes.navLink}
+					>
+						<PublicIcon className={classes.icons} /> Travel
+					</Button>
+				</Link>
 			</ListItem>
 			<ListItem className={classes.listItem}>
-				<Button
-					href="/cooking"
-					color={(props.type == "cooking" && "default") || "transparent"}
-					className={classes.navLink}
-				>
-					<FastfoodIcon className={classes.icons} /> Cooking
-				</Button>
+				<Link href="/cooking">
+					<Button
+						color={(props.type == "cooking" && "default") || "transparent"}
+						className={classes.navLink}
+					>
+						<FastfoodIcon className={classes.icons} /> Cooking
+					</Button>
+				</Link>
 			</ListItem>
 
 			{/* <ListItem className={classes.listItem}>
