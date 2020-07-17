@@ -17,23 +17,20 @@ import GridItem from "components/Grid/GridItem.js";
 import HeaderLinks from "components/Header/HeaderLinks.js";
 import Parallax from "components/Parallax/Parallax.js";
 
-import profile from "assets/img/cooking.jpeg";
+import profile from "assets/img/profiles/cooking.jpg";
 
-import studio1 from "assets/img/examples/studio-1.jpg";
-import studio2 from "assets/img/examples/studio-2.jpg";
-import studio4 from "assets/img/examples/studio-4.jpg";
-import studio5 from "assets/img/examples/studio-5.jpg";
-import work1 from "assets/img/examples/olu-eletu.jpg";
-import work2 from "assets/img/examples/clem-onojeghuo.jpg";
-import work3 from "assets/img/examples/cynthia-del-rio.jpg";
+function importAll(r) {
+	let images = {};
+	r.keys().map((item, index) => {
+		images[item.replace("./", "")] = r(item);
+	});
+	return images;
+}
+const images = importAll(require.context("assets/img/food", false, /.jpg/));
 
 import styles from "assets/jss/spotlightPage.js";
 
 const useStyles = makeStyles(styles);
-
-const Transition = React.forwardRef(function Transition(props, ref) {
-	return <Slide direction="down" ref={ref} {...props} />;
-});
 
 export default function CookingPage(props) {
 	const classes = useStyles();
@@ -43,12 +40,25 @@ export default function CookingPage(props) {
 		classes.imgRoundedCircle,
 		classes.imgFluid
 	);
-	const navImageClassesRounded = classNames(
-		classes.imgRounded,
-		classes.imgFluid
-	);
 	const navImageClasses = classNames(classes.imgRounded, classes.imgGallery);
-	const [classicModal, setClassicModal] = React.useState(false);
+	var col1 = {},
+		col2 = {},
+		col3 = {},
+		i = 0;
+	for (const [key, value] of Object.entries(images)) {
+		switch (i % 3) {
+			case 0:
+				col1[key] = value;
+				break;
+			case 1:
+				col2[key] = value;
+				break;
+			default:
+				col3[key] = value;
+		}
+		i++;
+	}
+	console.log(col1, col2, col3);
 	return (
 		<React.Fragment>
 			<Head>
@@ -62,11 +72,15 @@ export default function CookingPage(props) {
 					fixed
 					changeColorOnScroll={{
 						height: 200,
-						color: "default",
+						color: "info",
 					}}
 					{...rest}
 				/>
-				<Parallax small filter image={require("assets/img/profile-bg.jpg")} />
+				<Parallax
+					small
+					filter
+					image={require("assets/img/profile-bg.jpg")}
+				/>
 				<div className={classNames(classes.main, classes.mainRaised)}>
 					<div>
 						<div className={classes.container}>
@@ -74,21 +88,27 @@ export default function CookingPage(props) {
 								<GridItem xs={12} sm={12} md={6}>
 									<div className={classes.profile}>
 										<div>
-											<img src={profile} alt="..." className={imageClasses} />
+											<img
+												src={profile}
+												alt="..."
+												className={imageClasses}
+											/>
 										</div>
 										<div className={classes.name}>
-											<h2 className={classes.title}>Cooking</h2>
+											<h2 className={classes.title}>
+												Cooking
+											</h2>
 										</div>
 									</div>
 								</GridItem>
 							</GridContainer>
 							<div className={classes.description}>
-								<p>
-									An artist of considerable range, Chet Faker — the name taken
-									by Melbourne-raised, Brooklyn-based Nick Murphy — writes,
-									performs and records all of his own music, giving it a warm,
-									intimate feel with a solid groove structure.{" "}
-								</p>
+								<h5>
+									My love for food is fittingly paired with my
+									love for cooking. This is a collection of{" "}
+									<b>homemade</b> foods that I've had the
+									pleasure of cooking and/or eating.
+								</h5>
 								<br />
 							</div>
 
@@ -108,18 +128,37 @@ export default function CookingPage(props) {
 									>
 										<img alt="..." src={studio1} className={navImageClasses} />
 									</Tooltip> */}
-
-									<img alt="..." src={studio1} className={navImageClasses} />
-									<img alt="..." src={studio2} className={navImageClasses} />
+									{Object.keys(col1).map((key, index) => {
+										return (
+											<img
+												alt="..."
+												src={col1[key]}
+												className={navImageClasses}
+											/>
+										);
+									})}
 								</GridItem>
 								<GridItem xs={12} sm={12} md={4}>
-									<img alt="..." src={studio5} className={navImageClasses} />
-									<img alt="..." src={studio4} className={navImageClasses} />
+									{Object.keys(col2).map((key, index) => {
+										return (
+											<img
+												alt="..."
+												src={col2[key]}
+												className={navImageClasses}
+											/>
+										);
+									})}
 								</GridItem>
 								<GridItem xs={12} sm={12} md={4}>
-									<img alt="..." src={work1} className={navImageClasses} />
-									<img alt="..." src={work2} className={navImageClasses} />
-									<img alt="..." src={work3} className={navImageClasses} />
+									{Object.keys(col3).map((key, index) => {
+										return (
+											<img
+												alt="..."
+												src={col3[key]}
+												className={navImageClasses}
+											/>
+										);
+									})}
 								</GridItem>
 							</GridContainer>
 							<div className={classes.space50} />

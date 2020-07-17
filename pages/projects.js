@@ -14,10 +14,11 @@ import GridContainer from "components/Grid/GridContainer.js";
 import GridItem from "components/Grid/GridItem.js";
 import HeaderLinks from "components/Header/HeaderLinks.js";
 import Parallax from "components/Parallax/Parallax.js";
-import Badge from "components/Badge/Badge.js";
-
-import profile from "assets/img/projects2.jpeg";
-import image1 from "assets/img/bg.jpg";
+import Project from "components/Project/Project.js";
+import profile from "assets/img/profiles/projects2.jpg";
+import gendo from "assets/img/projects/gendo.jpg";
+import slackbot from "assets/img/projects/slackbot.jpg";
+import coursetable from "assets/img/projects/coursetable.jpg";
 
 import styles from "assets/jss/spotlightPage.js";
 
@@ -31,7 +32,6 @@ export default function ProjectsPage(props) {
 		classes.imgRoundedCircle,
 		classes.imgFluid
 	);
-	const navImageClasses = classNames(classes.imgRounded, classes.imgGallery);
 	return (
 		<React.Fragment>
 			<Head>
@@ -48,7 +48,11 @@ export default function ProjectsPage(props) {
 					}}
 					{...rest}
 				/>
-				<Parallax small filter image={require("assets/img/profile-bg.jpg")} />
+				<Parallax
+					small
+					filter
+					image={require("assets/img/profile-bg.jpg")}
+				/>
 				<div className={classNames(classes.main, classes.mainRaised)}>
 					<div>
 						<div className={classes.container}>
@@ -56,10 +60,16 @@ export default function ProjectsPage(props) {
 								<GridItem xs={12} sm={12} md={6}>
 									<div className={classes.profile}>
 										<div>
-											<img src={profile} alt="..." className={imageClasses} />
+											<img
+												src={profile}
+												alt="..."
+												className={imageClasses}
+											/>
 										</div>
 										<div className={classes.name}>
-											<h2 className={classes.title}>Projects</h2>
+											<h2 className={classes.title}>
+												Projects
+											</h2>
 										</div>
 									</div>
 								</GridItem>
@@ -67,121 +77,45 @@ export default function ProjectsPage(props) {
 
 							<div className={classes.description}>
 								<p>
-									Something about my passion for meaningful projects and
-									hands-on experience.
+									Something about my passion for meaningful
+									projects and hands-on experience.
 								</p>
 							</div>
-							<GridContainer>
-								<GridItem xs={12} sm={12} md={4}>
-									<h3>{"\xa0\xa0\xa0"}Generation Do!</h3>
-								</GridItem>
-								<GridItem xs={12} sm={12} md={12}>
-									<GridContainer justify="center">
-										<GridItem
-											container
-											xs={12}
-											sm={12}
-											md={6}
-											alignContent="space-around"
-										>
-											<GridItem xs={12} sm={12} md={12}>
-												<GridContainer justify="center">
-													<GridItem xs={3} sm={3} md={3}>
-														<Badge color="primary">What</Badge>
-													</GridItem>
-													<GridItem xs={9} sm={9} md={9}>
-														<p>
-															Collaboratively administrate empowered markets via
-															plug-and-play networks. Dynamically procrastinate
-															B2C users after installed base benefits.
-														</p>
-													</GridItem>
-												</GridContainer>
-											</GridItem>
-											<GridItem xs={12} sm={12} md={12}>
-												<GridContainer justify="center">
-													<GridItem xs={3} sm={3} md={3}>
-														<Badge color="primary">
-															{"\xa0"}Why{"\xa0"}
-														</Badge>
-													</GridItem>
-													<GridItem xs={9} sm={9} md={9}>
-														<p>
-															Collaboratively administrate empowered markets via
-															plug-and-play networks. Dynamically procrastinate
-															B2C users after installed base benefits.
-														</p>
-													</GridItem>
-												</GridContainer>
-											</GridItem>
-										</GridItem>
 
-										<GridItem xs={12} sm={12} md={6} justify="center">
-											<img
-												alt="..."
-												src={image1}
-												className={classes.imgFluid}
-											/>
-										</GridItem>
-									</GridContainer>
-								</GridItem>
-							</GridContainer>
-							<div className={classes.space50} />
-							<GridContainer>
-								<GridItem xs={12} sm={12} md={4}>
-									<h3>{"\xa0\xa0\xa0"}SlackBot</h3>
-								</GridItem>
-								<GridItem xs={12} sm={12} md={12}>
-									<GridContainer justify="center">
-										<GridItem
-											container
-											xs={12}
-											sm={12}
-											md={6}
-											alignContent="space-around"
-										>
-											<GridItem xs={12} sm={12} md={12}>
-												<GridContainer justify="center">
-													<GridItem xs={3} sm={3} md={3}>
-														<Badge color="primary">What</Badge>
-													</GridItem>
-													<GridItem xs={9} sm={9} md={9}>
-														<p>
-															Collaboratively administrate empowered markets via
-															plug-and-play networks. Dynamically procrastinate
-															B2C users after installed base benefits.
-														</p>
-													</GridItem>
-												</GridContainer>
-											</GridItem>
-											<GridItem xs={12} sm={12} md={12}>
-												<GridContainer justify="center">
-													<GridItem xs={3} sm={3} md={3}>
-														<Badge color="primary">
-															{"\xa0"}Why{"\xa0"}
-														</Badge>
-													</GridItem>
-													<GridItem xs={9} sm={9} md={9}>
-														<p>
-															Collaboratively administrate empowered markets via
-															plug-and-play networks. Dynamically procrastinate
-															B2C users after installed base benefits.
-														</p>
-													</GridItem>
-												</GridContainer>
-											</GridItem>
-										</GridItem>
+							<Project
+								title={"Generation Do!"}
+								what={
+									"Collabovia plug-and-play networks. Dynamically procrastinate B2C users after installed base benefits."
+								}
+								why={
+									"Collaboraia plug-and-play networks. Dynamically procrastinate B2C users after installed base benefits."
+								}
+								picture={gendo}
+								color={"gendo"}
+							/>
 
-										<GridItem xs={12} sm={12} md={6} justify="center">
-											<img
-												alt="..."
-												src={image1}
-												className={classes.imgFluid}
-											/>
-										</GridItem>
-									</GridContainer>
-								</GridItem>
-							</GridContainer>
+							<Project
+								title={"Social Ecology Lab SlackBot"}
+								what={
+									"Collaboratively admmically procrastinate B2C users after installed base benefits."
+								}
+								why={
+									"Collaboratively administratnetworks. Dynamically procrastinate B2C users after installed base benefits."
+								}
+								picture={slackbot}
+								color={"stanford"}
+							/>
+							<Project
+								title={"CourseTable"}
+								what={
+									"Collaboratively admmically procrastinate B2C users after installed base benefits."
+								}
+								why={
+									"Collaboratively administratnetworks. Dynamically procrastinate B2C users after installed base benefits."
+								}
+								picture={coursetable}
+								color={"coursetable"}
+							/>
 							<div className={classes.space90} />
 						</div>
 					</div>

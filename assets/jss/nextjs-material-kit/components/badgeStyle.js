@@ -22,6 +22,15 @@ const badgeStyle = {
 		verticalAlign: "baseline",
 		display: "inline-block",
 	},
+	coursetable: {
+		backgroundColor: "#92bcea",
+	},
+	stanford: {
+		backgroundColor: "#890c12",
+	},
+	gendo: {
+		backgroundColor: "#1f71d6",
+	},
 	primary: {
 		backgroundColor: primaryColor,
 	},

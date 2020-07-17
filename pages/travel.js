@@ -24,7 +24,7 @@ import GridItem from "components/Grid/GridItem.js";
 import HeaderLinks from "components/Header/HeaderLinks.js";
 import Parallax from "components/Parallax/Parallax.js";
 
-import profile from "assets/img/travel.jpg";
+import profile from "assets/img/profiles/travel.jpg";
 
 import studio1 from "assets/img/examples/studio-1.jpg";
 import studio2 from "assets/img/examples/studio-2.jpg";
@@ -76,7 +76,11 @@ export default function TravelPage(props) {
 					}}
 					{...rest}
 				/>
-				<Parallax small filter image={require("assets/img/profile-bg.jpg")} />
+				<Parallax
+					small
+					filter
+					image={require("assets/img/profile-bg.jpg")}
+				/>
 				<div className={classNames(classes.main, classes.mainRaised)}>
 					<div>
 						<div className={classes.container}>
@@ -84,20 +88,28 @@ export default function TravelPage(props) {
 								<GridItem xs={12} sm={12} md={6}>
 									<div className={classes.profile}>
 										<div>
-											<img src={profile} alt="..." className={imageClasses} />
+											<img
+												src={profile}
+												alt="..."
+												className={imageClasses}
+											/>
 										</div>
 										<div className={classes.name}>
-											<h2 className={classes.title}>Travel</h2>
+											<h2 className={classes.title}>
+												Travel
+											</h2>
 										</div>
 									</div>
 								</GridItem>
 							</GridContainer>
 							<div className={classes.description}>
 								<p>
-									An artist of considerable range, Chet Faker — the name taken
-									by Melbourne-raised, Brooklyn-based Nick Murphy — writes,
-									performs and records all of his own music, giving it a warm,
-									intimate feel with a solid groove structure.{" "}
+									An artist of considerable range, Chet Faker
+									— the name taken by Melbourne-raised,
+									Brooklyn-based Nick Murphy — writes,
+									performs and records all of his own music,
+									giving it a warm, intimate feel with a solid
+									groove structure.{" "}
 								</p>
 								<br />
 							</div>
@@ -105,17 +117,16 @@ export default function TravelPage(props) {
 							<GridContainer>
 								<GridItem container xs={12} sm={6} md={4}>
 									<GridItem>
-										{/* <Button
-									// color="transparent"
-									onClick={() => setClassicModal(true)}
-								>
-									<img alt="..." src={studio1} />
-								</Button> */}
+										{/* TODO: make modal more obvious? */}
 										<a style={{ cursor: "pointer" }}>
 											<img
 												src={studio1}
-												className={navImageClassesRounded}
-												onClick={() => setClassicModal(true)}
+												className={
+													navImageClassesRounded
+												}
+												onClick={() =>
+													setClassicModal(true)
+												}
 											/>
 										</a>
 
@@ -127,7 +138,9 @@ export default function TravelPage(props) {
 											open={classicModal}
 											TransitionComponent={Transition}
 											keepMounted
-											onClose={() => setClassicModal(false)}
+											onClose={() =>
+												setClassicModal(false)
+											}
 											aria-labelledby="classic-modal-slide-title"
 											aria-describedby="classic-modal-slide-description"
 											maxWidth="md"
@@ -143,15 +156,29 @@ export default function TravelPage(props) {
 													md={12}
 													justify="flex-end"
 												>
-													<GridItem xs={1} sm={1} md={1}>
+													<GridItem
+														xs={1}
+														sm={1}
+														md={1}
+													>
 														<IconButton
-															className={classes.modalCloseButton}
+															className={
+																classes.modalCloseButton
+															}
 															key="close"
 															aria-label="Close"
 															color="inherit"
-															onClick={() => setClassicModal(false)}
+															onClick={() =>
+																setClassicModal(
+																	false
+																)
+															}
 														>
-															<Close className={classes.modalClose} />
+															<Close
+																className={
+																	classes.modalClose
+																}
+															/>
 														</IconButton>
 													</GridItem>
 												</GridContainer>
@@ -164,9 +191,14 @@ export default function TravelPage(props) {
 													justify="center"
 												>
 													{/* TODO: Align items here */}
-													<h3 className={classes.modalTitle}>
+													<h3
+														className={
+															classes.modalTitle
+														}
+													>
 														<LocationOn />
-														Banff National Park, United States
+														Banff National Park,
+														United States
 													</h3>
 												</GridItem>
 											</DialogTitle>
@@ -176,45 +208,71 @@ export default function TravelPage(props) {
 												className={classes.modalBody}
 											>
 												<GridContainer justify="center">
-													<GridItem xs={12} sm={12} md={4}>
+													<GridItem
+														xs={12}
+														sm={12}
+														md={4}
+													>
 														<img
 															alt="..."
 															src={studio1}
-															className={navImageClasses}
+															className={
+																navImageClasses
+															}
 														/>
 														<img
 															alt="..."
 															src={studio2}
-															className={navImageClasses}
+															className={
+																navImageClasses
+															}
 														/>
 													</GridItem>
-													<GridItem xs={12} sm={12} md={4}>
+													<GridItem
+														xs={12}
+														sm={12}
+														md={4}
+													>
 														<img
 															alt="..."
 															src={studio5}
-															className={navImageClasses}
+															className={
+																navImageClasses
+															}
 														/>
 														<img
 															alt="..."
 															src={studio4}
-															className={navImageClasses}
+															className={
+																navImageClasses
+															}
 														/>
 													</GridItem>
-													<GridItem xs={12} sm={12} md={4}>
+													<GridItem
+														xs={12}
+														sm={12}
+														md={4}
+													>
 														<img
 															alt="..."
 															src={work1}
-															className={navImageClasses}
+															className={
+																navImageClasses
+															}
 														/>
 														<img
 															alt="..."
 															src={work2}
-															className={navImageClasses}
+															className={
+																navImageClasses
+															}
 														/>
 														<img
 															alt="..."
 															src={work3}
-															className={navImageClasses}
+															className={
+																navImageClasses
+															}
 														/>
 													</GridItem>
 												</GridContainer>

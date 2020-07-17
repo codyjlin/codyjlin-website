@@ -31,8 +31,11 @@ export default function HeaderLinks(props) {
 		<List className={classes.list}>
 			<ListItem className={classes.listItem}>
 				<Link href="/projects">
-					<Button
-						color={(props.type == "projects" && "default") || "transparent"}
+					<Button // TODO: underline instead of change color
+						color={
+							(props.type == "projects" && "default") ||
+							"transparent"
+						}
 						className={classes.navLink}
 					>
 						<Build className={classes.icons} /> Projects
@@ -42,7 +45,10 @@ export default function HeaderLinks(props) {
 			<ListItem className={classes.listItem}>
 				<Link href="/travel">
 					<Button
-						color={(props.type == "travel" && "default") || "transparent"}
+						color={
+							(props.type == "travel" && "default") ||
+							"transparent"
+						}
 						className={classes.navLink}
 					>
 						<PublicIcon className={classes.icons} /> Travel
@@ -52,7 +58,10 @@ export default function HeaderLinks(props) {
 			<ListItem className={classes.listItem}>
 				<Link href="/cooking">
 					<Button
-						color={(props.type == "cooking" && "default") || "transparent"}
+						color={
+							(props.type == "cooking" && "default") ||
+							"transparent"
+						}
 						className={classes.navLink}
 					>
 						<FastfoodIcon className={classes.icons} /> Cooking

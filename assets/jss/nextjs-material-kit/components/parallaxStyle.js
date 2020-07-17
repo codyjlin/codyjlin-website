@@ -1,6 +1,6 @@
 const parallaxStyle = (theme) => ({
 	parallax: {
-		height: "70vh", // @codyjlin: height of Parallax
+		height: "60vh", // @codyjlin: height of Parallax
 		maxHeight: "1000px",
 		overflow: "hidden",
 		position: "relative",
@@ -28,7 +28,7 @@ const parallaxStyle = (theme) => ({
 		},
 	},
 	small: {
-		height: "420px",
+		height: "350px",
 	},
 	parallaxResponsive: {
 		[theme.breakpoints.down("md")]: {

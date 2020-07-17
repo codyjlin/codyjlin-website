@@ -21,6 +21,10 @@ const spotlightStyle = {
 			transform: "translate3d(0, -50%, 0)",
 		},
 	},
+	space30: {
+		height: "30px",
+		display: "block",
+	},
 	space50: {
 		height: "50px",
 		display: "block",
