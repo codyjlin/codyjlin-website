@@ -22,8 +22,14 @@ const badgeStyle = {
 		verticalAlign: "baseline",
 		display: "inline-block",
 	},
+	ibm: {
+		backgroundColor: "#1F70C1",
+	},
+	fb: {
+		backgroundColor: "#007ef8",
+	},
 	coursetable: {
-		backgroundColor: "#92bcea",
+		backgroundColor: "#444454",
 	},
 	stanford: {
 		backgroundColor: "#890c12",

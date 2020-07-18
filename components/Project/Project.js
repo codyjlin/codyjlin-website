@@ -17,7 +17,7 @@ const useStyles = makeStyles(styles);
 
 export default function Project(props) {
 	const classes = useStyles();
-	const { title, what, why, picture, color } = props;
+	const { title, what, why, imgs, color } = props;
 	const imageClasses = classNames(classes.imgRounded, classes.imgGallery);
 	return (
 		<GridContainer>
@@ -33,7 +33,7 @@ export default function Project(props) {
 						container
 						xs={12}
 						sm={12}
-						md={6}
+						md={7}
 						alignContent="space-around"
 					>
 						<GridItem xs={12} sm={12} md={12}>
@@ -88,15 +88,37 @@ export default function Project(props) {
 						container
 						xs={12}
 						sm={12}
-						md={6}
+						md={5}
 						justify="center"
 						alignItems="center"
 					>
-						<img
+						{imgs.map((img) => (
+							<GridItem
+								container
+								xs={Math.floor(12 / imgs.length)}
+								sm={Math.floor(12 / imgs.length)}
+								md={Math.floor(12 / imgs.length)}
+								justify="center"
+								alignItems="center"
+							>
+								<img
+									alt="..."
+									src={img}
+									style={{
+										maxHeight: "130px",
+										width: "auto",
+										objectFit: "contain",
+										padding: "20px 20px",
+									}}
+								/>
+							</GridItem>
+						))}
+
+						{/* <img
 							alt="..."
 							src={picture}
 							style={{ maxHeight: "200px", width: "auto" }}
-						/>
+						/> */}
 					</GridItem>
 				</GridContainer>
 			</GridItem>

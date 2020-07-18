@@ -114,22 +114,23 @@ export default function CookingPage(props) {
 
 							<GridContainer justify="center">
 								<GridItem xs={12} sm={12} md={4}>
-									{/* TODO: toggle captions?? */}
-									{/* <img alt="..." src={studio1} className={navImageClasses} />   // CAPTION
-								<div className={classNames(classes.caption)}>
-									<h4>Yellowstone National Park, United States</h4>
-								</div> */}
-
-									{/* <Tooltip    // TOOLTIP
-										id="tooltip-left"
-										title="Tooltip on bottom"
-										placement="bottom"
-										classes={{ tooltip: classes.tooltip }}
-									>
-										<img alt="..." src={studio1} className={navImageClasses} />
-									</Tooltip> */}
 									{Object.keys(col1).map((key, index) => {
 										return (
+											// <Tooltip // TOOLTIP for each pic?
+											// 	id="tooltip-left"
+											// 	title="Tooltip on bottom"
+											// 	placement="bottom"
+											// 	classes={{
+											// 		tooltip: classes.tooltip,
+											// 	}}
+											// >
+											// 	<img
+											// 		alt="..."
+											// 		src={col1[key]}
+											// 		className={navImageClasses}
+											// 	/>
+											// </Tooltip>
+
 											<img
 												alt="..."
 												src={col1[key]}

@@ -12,6 +12,8 @@ import GridItem from "components/Grid/GridItem.js";
 import InfoArea from "components/InfoArea/InfoArea.js";
 import Button from "components/CustomButtons/Button.js";
 
+import callforcode from "assets/img/projects/ibm_hackathon_call_for_code.png";
+
 import styles from "assets/jss/Index-Sections/Projects.js";
 
 const useStyles = makeStyles(styles);
@@ -62,25 +64,33 @@ export default function Projects() {
 							/>
 						</GridItem>
 					</GridContainer>
-					<div className={classes.textCenter + " " + classes.sharingArea}>
+					<div
+						className={
+							classes.textCenter + " " + classes.sharingArea
+						}
+					>
 						<GridContainer justify="center">
 							<h3>See my profiles here:</h3>
 						</GridContainer>
-						<Button
-							color="github"
-							size="lg"
-							href="https://github.com/codyjlin"
-							target="_blank"
-						>
-							<i className={classes.socials + " fab fa-github"} /> GitHub
-						</Button>
 						<Button
 							color="linkedin"
 							size="lg"
 							href="https://linkedin.com/in/codyjlin"
 							target="_blank"
 						>
-							<i className={classes.socials + " fab fa-linkedin"} /> LinkedIn
+							<i
+								className={classes.socials + " fab fa-linkedin"}
+							/>{" "}
+							LinkedIn
+						</Button>
+						<Button
+							color="github"
+							size="lg"
+							href="https://github.com/codyjlin"
+							target="_blank"
+						>
+							<i className={classes.socials + " fab fa-github"} />{" "}
+							GitHub
 						</Button>
 					</div>
 				</div>

@@ -15,10 +15,20 @@ import GridItem from "components/Grid/GridItem.js";
 import HeaderLinks from "components/Header/HeaderLinks.js";
 import Parallax from "components/Parallax/Parallax.js";
 import Project from "components/Project/Project.js";
+
+// assets/imgs
 import profile from "assets/img/profiles/projects2.jpg";
-import gendo from "assets/img/projects/gendo.jpg";
-import slackbot from "assets/img/projects/slackbot.jpg";
-import coursetable from "assets/img/projects/coursetable.jpg";
+import gendo from "assets/img/projects/gendo.png";
+import slack from "assets/img/projects/slackbot_slack.png";
+import stanford from "assets/img/projects/slackbot_stanford.png";
+import sel from "assets/img/projects/slackbot_sel.png";
+import ct from "assets/img/projects/coursetable_ct.png";
+import yale from "assets/img/projects/coursetable_yale.png";
+import messenger from "assets/img/projects/fb_hackathon_messenger.png";
+import devpost from "assets/img/projects/fb_hackathon_devpost_icon.png";
+import blm from "assets/img/projects/fb_hackathon_blm.png";
+import ibm from "assets/img/projects/ibm_hackathon_logo.png";
+import callforcode from "assets/img/projects/ibm_hackathon_call_for_code.png";
 
 import styles from "assets/jss/spotlightPage.js";
 
@@ -90,7 +100,7 @@ export default function ProjectsPage(props) {
 								why={
 									"Collaboraia plug-and-play networks. Dynamically procrastinate B2C users after installed base benefits."
 								}
-								picture={gendo}
+								imgs={[gendo]}
 								color={"gendo"}
 							/>
 
@@ -102,7 +112,7 @@ export default function ProjectsPage(props) {
 								why={
 									"Collaboratively administratnetworks. Dynamically procrastinate B2C users after installed base benefits."
 								}
-								picture={slackbot}
+								imgs={[slack, stanford, sel]}
 								color={"stanford"}
 							/>
 							<Project
@@ -113,8 +123,30 @@ export default function ProjectsPage(props) {
 								why={
 									"Collaboratively administratnetworks. Dynamically procrastinate B2C users after installed base benefits."
 								}
-								picture={coursetable}
+								imgs={[ct, yale]}
 								color={"coursetable"}
+							/>
+							<Project
+								title={"FB Messenger Hackathon"}
+								what={
+									"Collaboratively admmically procrastinate B2C users after installed base benefits."
+								}
+								why={
+									"Collaboratively administratnetworks. Dynamically procrastinate B2C users after installed base benefits."
+								}
+								imgs={[messenger, blm, devpost]}
+								color={"fb"}
+							/>
+							<Project
+								title={"IBM Call for Code Hackathon"}
+								what={
+									"Collaboratively admmically procrastinate B2C users after installed base benefits."
+								}
+								why={
+									"Collaboratively administratnetworks. Dynamically procrastinate B2C users after installed base benefits."
+								}
+								imgs={[callforcode, ibm]}
+								color={"ibm"}
 							/>
 							<div className={classes.space90} />
 						</div>
