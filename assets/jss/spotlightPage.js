@@ -78,6 +78,18 @@ const spotlightStyle = {
 		textAlign: "center",
 	},
 	...tooltipsStyle,
+	icon: {
+		width: "18px",
+		height: "20px",
+		position: "relative",
+		top: "3px",
+	},
+	largeIcon: {
+		width: "25px",
+		height: "40px",
+		position: "relative",
+		top: "3px",
+	},
 };
 
 export default spotlightStyle;

@@ -14,7 +14,7 @@ import GridContainer from "components/Grid/GridContainer.js";
 import GridItem from "components/Grid/GridItem.js";
 import HeaderLinks from "components/Header/HeaderLinks.js";
 import Parallax from "components/Parallax/Parallax.js";
-import Project from "components/Project/Project.js";
+import Project from "pages-sections/Project-Sections/Project.js";
 
 // assets/imgs
 import profile from "assets/img/profiles/projects2.jpg";
@@ -100,7 +100,7 @@ export default function ProjectsPage(props) {
 								why={
 									"Collaboraia plug-and-play networks. Dynamically procrastinate B2C users after installed base benefits."
 								}
-								imgs={[gendo]}
+								imgs={[[gendo, "https://gendoit.org"]]}
 								color={"gendo"}
 							/>
 
@@ -112,7 +112,14 @@ export default function ProjectsPage(props) {
 								why={
 									"Collaboratively administratnetworks. Dynamically procrastinate B2C users after installed base benefits."
 								}
-								imgs={[slack, stanford, sel]}
+								imgs={[
+									[slack, ""],
+									[stanford, ""],
+									[
+										sel,
+										"https://nmardoin.people.stanford.edu/",
+									],
+								]}
 								color={"stanford"}
 							/>
 							<Project
@@ -123,7 +130,13 @@ export default function ProjectsPage(props) {
 								why={
 									"Collaboratively administratnetworks. Dynamically procrastinate B2C users after installed base benefits."
 								}
-								imgs={[ct, yale]}
+								imgs={[
+									[
+										ct,
+										"https://github.com/coursetable/coursetable",
+									],
+									[yale, ""],
+								]}
 								color={"coursetable"}
 							/>
 							<Project
@@ -134,7 +147,17 @@ export default function ProjectsPage(props) {
 								why={
 									"Collaboratively administratnetworks. Dynamically procrastinate B2C users after installed base benefits."
 								}
-								imgs={[messenger, blm, devpost]}
+								imgs={[
+									[messenger, "https://m.me/BLMtest"],
+									[
+										blm,
+										"https://devpost.com/software/spreading-the-movement",
+									],
+									[
+										devpost,
+										"https://devpost.com/software/spreading-the-movement",
+									],
+								]}
 								color={"fb"}
 							/>
 							<Project
@@ -145,7 +168,13 @@ export default function ProjectsPage(props) {
 								why={
 									"Collaboratively administratnetworks. Dynamically procrastinate B2C users after installed base benefits."
 								}
-								imgs={[callforcode, ibm]}
+								imgs={[
+									[
+										callforcode,
+										"https://developer.ibm.com/callforcode/",
+									],
+									[ibm, ""],
+								]}
 								color={"ibm"}
 							/>
 							<div className={classes.space90} />

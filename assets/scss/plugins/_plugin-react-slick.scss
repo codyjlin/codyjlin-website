@@ -81,9 +81,18 @@
 	top: 0;
 	left: 0;
 
-	display: block;
+	// display: block;
 	margin-left: auto;
 	margin-right: auto;
+	display: flex;
+
+	.slick-slide {
+		height: auto;
+
+		> div {
+			height: 100%;
+		}
+	}
 }
 .slick-track:before,
 .slick-track:after {
@@ -104,6 +113,7 @@
 
 	height: 100%;
 	min-height: 1px;
+	margin: 0 17px;
 }
 [dir="rtl"] .slick-slide {
 	float: right;
@@ -192,6 +202,7 @@ button.slick-arrow.slick-next {
 }
 .slick-list {
 	z-index: 1;
+	margin: 0 -17px;
 }
 .slick-dots {
 	margin-top: 0;

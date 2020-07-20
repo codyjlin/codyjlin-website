@@ -10,6 +10,7 @@ import GridContainer from "components/Grid/GridContainer.js";
 import GridItem from "components/Grid/GridItem.js";
 import Card from "components/Card/Card.js";
 
+// 1.93 ratio images
 import image1 from "assets/img/bg.jpg";
 import image2 from "assets/img/bg2.jpg";
 import image3 from "assets/img/bg3.jpg";
@@ -31,10 +32,17 @@ export default function TravelCarousel() {
 	return (
 		<div className={classes.section}>
 			<div className={classes.container}>
-				<h2>Travel</h2>
+				<h2>
+					<b>Travel</b>
+				</h2>
 				<h4> Maybe write something here?, ...</h4>
 				<GridContainer>
-					<GridItem xs={12} sm={12} md={12} className={classes.marginAuto}>
+					<GridItem
+						xs={12}
+						sm={12}
+						md={12}
+						className={classes.marginAuto}
+					>
 						<Card carousel>
 							<a target="_blank" href="/travel">
 								{/* TODO: Separate rerouting by view */}
@@ -48,7 +56,8 @@ export default function TravelCarousel() {
 										<div className="slick-caption">
 											<h3>
 												<LocationOn className="slick-icons" />
-												Yellowstone National Park, United States
+												Yellowstone National Park,
+												United States
 											</h3>
 										</div>
 									</div>
@@ -74,7 +83,8 @@ export default function TravelCarousel() {
 										<div className="slick-caption">
 											<h4>
 												<LocationOn className="slick-icons" />
-												Yellowstone National Park, United States
+												Yellowstone National Park,
+												United States
 											</h4>
 										</div>
 									</div>

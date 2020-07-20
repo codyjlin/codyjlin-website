@@ -46,7 +46,9 @@ class Index extends Component {
 							<GridContainer>
 								<GridItem>
 									<div className={classes.brand}>
-										<h1 className={classes.title}>Hi, I'm Cody.</h1>
+										<h1 className={classes.title}>
+											Hi, I'm Cody.
+										</h1>
 										<h3 className={classes.subtitle}>
 											Short intro description here.
 										</h3>
@@ -56,14 +58,12 @@ class Index extends Component {
 						</div>
 					</Parallax>
 
-					<div className={classNames(classes.main, classes.mainRaised)}>
+					<div
+						className={classNames(classes.main, classes.mainRaised)}
+					>
 						<IntroCarousel />
 						<Projects />
 						<TravelCarousel />
-						{/* Projects: gendo, FB hackathon, coursetable, tennis4ms */}
-						{/* Travel: china, yellowstone, DC, alaska, banff, mexico, CO, hawaii, france, SF, 
-                      yosemite, tahoe*/}
-						{/* Cooking(?): dumplings, bao zi, tang yuan, stromboli, pizza, gnocchi, perrogies(?) */}
 						<div className={classes.space80} />
 					</div>
 					<Footer />

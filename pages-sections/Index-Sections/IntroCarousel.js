@@ -13,19 +13,22 @@ import GridItem from "components/Grid/GridItem.js";
 
 import styles from "assets/jss/Index-Sections/IntroCarousel.js";
 
-// images
-import image1 from "assets/img/bg.jpg";
-import image2 from "assets/img/bg2.jpg";
-import image3 from "assets/img/bg3.jpg";
+// 4x3 images
+import im1 from "assets/img/food/1.jpg";
+import im2 from "assets/img/food/2.jpg";
+import im3 from "assets/img/food/3.jpg";
+import im4 from "assets/img/food/4.jpg";
+import im5 from "assets/img/food/5.jpg";
 
 const useStyles = makeStyles(styles);
 
 export default function IntroCarousel() {
 	const classes = useStyles();
-	const imageClasses = classNames(classes.imgGallery, classes.imgRounded);
+	const imageClasses = classNames(classes.imgRounded, classes.imgFluid);
 	var settings = {
 		autoplay: true,
-		dots: true,
+		// dots: true,
+		arrows: false,
 		infinite: true,
 		speed: 500,
 		slidesToShow: 3,
@@ -57,8 +60,6 @@ export default function IntroCarousel() {
 	return (
 		<div className={classes.section}>
 			<div className={classes.container}>
-				{/* <h1>Travel</h1>
-				<h4> Maybe write something here?, ...</h4> */}
 				<GridContainer>
 					<GridItem
 						xs={12}
@@ -68,15 +69,26 @@ export default function IntroCarousel() {
 						className={classes.marginAuto}
 					>
 						<Slider {...settings}>
-							<div>
-								<img src={image1} alt="First slide" className={imageClasses} />
-							</div>
-							<div>
-								<img src={image2} alt="Second slide" className={imageClasses} />
-							</div>
-							<div>
-								<img src={image3} alt="Third slide" className={imageClasses} />
-							</div>
+							<img
+								src={im1}
+								alt="First slide"
+								className={imageClasses}
+							/>
+							<img
+								src={im1}
+								alt="First slide"
+								className={imageClasses}
+							/>
+							<img
+								src={im2}
+								alt="First slide"
+								className={imageClasses}
+							/>
+							<img
+								src={im3}
+								alt="Third slide"
+								className={imageClasses}
+							/>
 						</Slider>
 					</GridItem>
 				</GridContainer>

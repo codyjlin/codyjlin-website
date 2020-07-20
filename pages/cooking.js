@@ -17,15 +17,9 @@ import GridItem from "components/Grid/GridItem.js";
 import HeaderLinks from "components/Header/HeaderLinks.js";
 import Parallax from "components/Parallax/Parallax.js";
 
+// assets/img
 import profile from "assets/img/profiles/cooking.jpg";
-
-function importAll(r) {
-	let images = {};
-	r.keys().map((item, index) => {
-		images[item.replace("./", "")] = r(item);
-	});
-	return images;
-}
+import importAll from "public/importAll.js";
 const images = importAll(require.context("assets/img/food", false, /.jpg/));
 
 import styles from "assets/jss/spotlightPage.js";
