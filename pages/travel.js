@@ -21,6 +21,7 @@ import Travel from "pages-sections/Travel-Sections/Travel.js";
 // assets/imgs
 import importAll from "public/importAll.js";
 import profile from "assets/img/profiles/travel.jpg";
+
 import banff from "assets/img/travel/covers/banff.jpg";
 const banffs = importAll(
 	require.context("assets/img/travel/banff", false, /.jpg/)
@@ -31,6 +32,26 @@ const hawaiis = importAll(
 );
 import sf from "assets/img/travel/covers/sf.jpg";
 const sfs = importAll(require.context("assets/img/travel/sf", false, /.jpg/));
+import indianpond from "assets/img/travel/covers/indianpond.jpg";
+const indianponds = importAll(
+	require.context("assets/img/travel/indianpond", false, /.jpg/)
+);
+import acadia from "assets/img/travel/covers/acadia.jpg";
+const acadias = importAll(
+	require.context("assets/img/travel/acadia", false, /.jpg/)
+);
+import newport from "assets/img/travel/covers/newport.jpg";
+const newports = importAll(
+	require.context("assets/img/travel/newport", false, /.jpg/)
+);
+import pismo from "assets/img/travel/covers/pismo.jpg";
+const pismos = importAll(
+	require.context("assets/img/travel/pismo", false, /.jpg/)
+);
+import joshua from "assets/img/travel/covers/joshua.jpg";
+const joshuas = importAll(
+	require.context("assets/img/travel/joshua", false, /.jpg/)
+);
 
 import styles from "assets/jss/spotlightPage.js";
 
@@ -117,6 +138,36 @@ export default function TravelPage(props) {
 									setting="San Francisco, CA | 2017-2019"
 									cover={sf}
 									imgs={sfs}
+								/>
+								<Travel
+									name="Joshua Tree Nat. Park"
+									setting="Twentynine Palms, CA | 2018"
+									cover={joshua}
+									imgs={joshuas}
+								/>
+								<Travel
+									name="Pismo Beach"
+									setting="Pismo Beach, CA | 2018"
+									cover={pismo}
+									imgs={pismos}
+								/>
+								<Travel
+									name="Newport"
+									setting="Newport, RI | 2018"
+									cover={newport}
+									imgs={newports}
+								/>
+								<Travel
+									name="Indian Pond"
+									setting="St. Albans, ME | 2018"
+									cover={indianpond}
+									imgs={indianponds}
+								/>
+								<Travel
+									name="Acadia National Park"
+									setting="Bar Harbor, ME | 2018"
+									cover={acadia}
+									imgs={acadias}
 								/>
 								<Travel
 									name="Hawaii"

@@ -13,15 +13,12 @@ import Button from "components/CustomButtons/Button.js";
 import Project from "pages-sections/Index-Sections/Project.js";
 
 // assets/imgs
-import profile from "assets/img/profiles/projects2.jpg";
 import gendo from "assets/img/projects/gendo.png";
 import slack from "assets/img/projects/slackbot_slack.png";
-import stanford from "assets/img/projects/slackbot_stanford.png";
 import sel from "assets/img/projects/slackbot_sel.png";
 import ct from "assets/img/projects/coursetable_ct.png";
 import y from "assets/img/projects/y_logo.png";
 import messenger from "assets/img/projects/fb_hackathon_messenger.png";
-import devpost from "assets/img/projects/fb_hackathon_devpost_icon.png";
 import blm from "assets/img/projects/fb_hackathon_blm.png";
 import bee from "assets/img/projects/bee.png";
 import callforcode from "assets/img/projects/ibm_hackathon_call_for_code.png";

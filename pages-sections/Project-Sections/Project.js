@@ -87,7 +87,7 @@ export default function Project(props) {
 						{imgs.map((img) => (
 							<GridItem
 								container
-								xs={12}
+								xs={Math.floor(12 / imgs.length)}
 								sm={Math.floor(12 / imgs.length)}
 								md={Math.floor(12 / imgs.length)}
 								justify="center"

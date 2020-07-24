@@ -70,7 +70,7 @@ export default function Footer(props) {
 				<div className={classes.right}>
 					<BorderColorIcon className={classes.icon} />
 					{"  "}
-					Cody J. Lin
+					CJL
 					{/* <Favorite className={classes.icon} /> */}
 				</div>
 			</div>
