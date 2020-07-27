@@ -13,15 +13,8 @@ import GridItem from "components/Grid/GridItem.js";
 
 import styles from "assets/jss/Index-Sections/IntroCarousel.js";
 
-// 4x3 images
-import im1 from "assets/img/food/1.jpg";
-import im2 from "assets/img/food/2.jpg";
-import im3 from "assets/img/food/3.jpg";
-import im4 from "assets/img/food/4.jpg";
-import im5 from "assets/img/food/5.jpg";
-
 // assets/imgs
-import importAll from "public/importAll.js";
+import importAll from "common/importAll.js";
 const imgs = importAll(
 	require.context("assets/img/index/intro", false, /.jpg/)
 );

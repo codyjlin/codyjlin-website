@@ -19,7 +19,7 @@ import Parallax from "components/Parallax/Parallax.js";
 import Travel from "pages-sections/Travel-Sections/Travel.js";
 
 // assets/imgs
-import importAll from "public/importAll.js";
+import importAll from "common/importAll.js";
 import profile from "assets/img/profiles/travel.jpg";
 
 import banff from "assets/img/travel/covers/banff.jpg";

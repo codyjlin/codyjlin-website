@@ -71,7 +71,7 @@ export default function HeaderLinks(props) {
 
 			{/* <ListItem className={classes.listItem}>
         <Button
-          href="https://www.creative-tim.com/product/nextjs-material-kit?ref=njsmk-navbar"
+          href="..."
           color={(props.type == "blog" && "default") || "blog"}
           className={classes.navLink}
         >
@@ -106,6 +106,7 @@ export default function HeaderLinks(props) {
 				>
 					<Button
 						color="transparent"
+						// TODO: render .pdf file on site
 						href="https://drive.google.com/file/d/1xKZ6UIQjhQdp161N04j7E_qAWUfkctQi/view?usp=sharing"
 						target="_blank"
 						className={classes.navLink}
@@ -114,24 +115,6 @@ export default function HeaderLinks(props) {
 					</Button>
 				</Tooltip>
 			</ListItem>
-
-			{/* <ListItem className={classes.listItem}>
-        <Tooltip
-          id="instagram-facebook"
-          title="Follow us on facebook"
-          placement={"top"}
-          classes={{ tooltip: classes.tooltip }}
-        >
-          <Button
-            color="transparent"
-            href="https://www.facebook.com/CreativeTim?ref=creativetim"
-            target="_blank"
-            className={classes.navLink}
-          >
-            <i className={classes.socialIcons + " fab fa-facebook"} />
-          </Button>
-        </Tooltip>
-      </ListItem> */}
 		</List>
 	);
 }

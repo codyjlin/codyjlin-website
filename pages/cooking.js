@@ -19,7 +19,7 @@ import Parallax from "components/Parallax/Parallax.js";
 
 // assets/img
 import profile from "assets/img/profiles/cooking.jpg";
-import importAll from "public/importAll.js";
+import importAll from "common/importAll.js";
 const images = importAll(require.context("assets/img/food", false, /.jpg/));
 
 import styles from "assets/jss/spotlightPage.js";

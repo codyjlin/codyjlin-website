@@ -12,7 +12,7 @@ import Card from "components/Card/Card.js";
 
 // 1.93 ratio images
 // assets/imgs
-import importAll from "public/importAll.js";
+import importAll from "common/importAll.js";
 const imgs = importAll(
 	require.context("assets/img/index/travel", false, /.jpg/)
 );
