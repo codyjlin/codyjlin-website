@@ -50,7 +50,9 @@ export default function Project(props) {
 								</GridItem>
 
 								<GridItem xs={9} sm={9} md={9}>
-									<h5>{what}</h5>
+									<h5>
+										<b>{what}</b>
+									</h5>
 								</GridItem>
 							</GridContainer>
 						</GridItem>

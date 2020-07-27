@@ -73,7 +73,7 @@ export default function CookingPage(props) {
 				<Parallax
 					small
 					filter
-					image={require("assets/img/profile-bg.jpg")}
+					image={require("assets/img/cooking_bg.jpg")}
 				/>
 				<div className={classNames(classes.main, classes.mainRaised)}>
 					<div>
@@ -99,8 +99,8 @@ export default function CookingPage(props) {
 							<div className={classes.description}>
 								<h5>
 									My love for food is fittingly paired with my
-									love for cooking. This is a collection of{" "}
-									<b>homemade</b> foods that I've had the
+									love for cooking. This is a collection of
+									delicious homemade foods that I've had the
 									pleasure of cooking and/or eating.
 								</h5>
 								<br />

@@ -11,9 +11,26 @@ import GridItem from "components/Grid/GridItem.js";
 import Card from "components/Card/Card.js";
 
 // 1.93 ratio images
-import image1 from "assets/img/bg.jpg";
-import image2 from "assets/img/bg2.jpg";
-import image3 from "assets/img/bg3.jpg";
+// assets/imgs
+import importAll from "public/importAll.js";
+const imgs = importAll(
+	require.context("assets/img/index/travel", false, /.jpg/)
+);
+
+var locations = {
+	"acadia.jpg": "Acadia National Park, ME",
+	"tahoe20.jpg": "Lake Tahoe, NV",
+	"banff2.jpg": "Banff National Park, CAN",
+	"bay19.jpg": "The Bay, CA",
+	"pismo.jpg": "Pismo Beach, CA",
+	"caribbean.jpg": "The Caribbean Sea",
+	"sd.jpg": "San Diego, CA",
+	"banff.jpg": "Banff National Park, CAN",
+	"hawaii.jpg": "Kauai, HI",
+	"indianpond.jpg": "Indian Pond, ME",
+	"joshua.jpg": "Joshua Tree National Park, CA",
+	"tahoe19.jpg": "Lake Tahoe, CA",
+};
 
 import styles from "assets/jss/Index-Sections/TravelCarousel.js";
 
@@ -32,10 +49,10 @@ export default function TravelCarousel() {
 	return (
 		<div className={classes.section}>
 			<div className={classes.container}>
+				<hr />
 				<h2>
 					<b>Travel</b>
 				</h2>
-				<h4> Maybe write something here?, ...</h4>
 				<GridContainer>
 					<GridItem
 						xs={12}
@@ -44,52 +61,26 @@ export default function TravelCarousel() {
 						className={classes.marginAuto}
 					>
 						<Card carousel>
-							<a target="_blank" href="/travel">
-								{/* TODO: Separate rerouting by view */}
-								<Carousel {...settings}>
-									<div>
-										<img
-											src={image1}
-											alt="First slide"
-											className="slick-image"
-										/>
-										<div className="slick-caption">
-											<h3>
-												<LocationOn className="slick-icons" />
-												Yellowstone National Park,
-												United States
-											</h3>
+							{/* TODO: Separate rerouting by view */}
+							<Carousel {...settings}>
+								{Object.keys(locations).map((key, index) => {
+									return (
+										<div>
+											<img
+												src={imgs[key]}
+												alt="..."
+												className="slick-image"
+											/>
+											<div className="slick-caption">
+												<h3>
+													<LocationOn className="slick-icons" />
+													{locations[key]}
+												</h3>
+											</div>
 										</div>
-									</div>
-									<div>
-										<img
-											src={image2}
-											alt="Second slide"
-											className="slick-image"
-										/>
-										<div className="slick-caption">
-											<h4>
-												<LocationOn className="slick-icons" />
-												Somewhere Beyond, United States
-											</h4>
-										</div>
-									</div>
-									<div>
-										<img
-											src={image3}
-											alt="Third slide"
-											className="slick-image"
-										/>
-										<div className="slick-caption">
-											<h4>
-												<LocationOn className="slick-icons" />
-												Yellowstone National Park,
-												United States
-											</h4>
-										</div>
-									</div>
-								</Carousel>
-							</a>
+									);
+								})}
+							</Carousel>
 						</Card>
 					</GridItem>
 				</GridContainer>

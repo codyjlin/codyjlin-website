@@ -23,7 +23,7 @@ const componentsStyle = {
 		margin: "10px 0 0",
 	},
 	main: {
-		background: "#FFFFFF",
+		background: "#FFFFFF", // @codyjlin change background color ("#e6f1ff")
 		position: "relative",
 		zIndex: "3",
 		padding: "-100px 0px",

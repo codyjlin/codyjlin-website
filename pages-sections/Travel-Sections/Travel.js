@@ -138,17 +138,6 @@ export default function Travel(props) {
 									);
 								})}
 							</GridItem>
-							{/* <GridItem xs={12} sm={12} md={4}>
-								{Object.keys(col3).map((key, index) => {
-									return (
-										<img
-											alt="..."
-											src={col3[key]}
-											className={navImageClasses}
-										/>
-									);
-								})}
-							</GridItem> */}
 						</GridContainer>
 					</DialogContent>
 				</Dialog>

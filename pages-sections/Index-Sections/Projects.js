@@ -32,33 +32,24 @@ export default function Projects() {
 	return (
 		<div className={classes.section}>
 			<div className={classes.container}>
+				<hr />
 				<h2>
 					<b>Projects</b>
 				</h2>
-				<h4> Maybe write something here?, ...</h4>
-				<div className={classes.space50} />
 				<div>
 					<GridContainer>
 						<Project
 							title="Generation Do!"
-							description="https://devpost.com/software/spreading-the-movement Divide details about your product or agency work into parts. Write a few lines about each one. A paragraph describing a feature will be enough."
+							description="A nonprofit initiative to connect students with meaningful projects at organizations solving real-world problems."
 							imgs={[[gendo, "https://gendoit.org"]]}
 							iconColor="info"
 							vertical
 						/>
 						<Project
-							title="SEL Slackbot"
-							description="https://devpost.com/software/spreading-the-movement Divide details about your product or agency work into parts. Write a few lines about each one. A paragraph describing a feature will be enough."
-							imgs={[
-								[slack, ""],
-								[sel, "https://nmardoin.people.stanford.edu/"],
-							]}
-							iconColor="info"
-							vertical
-						/>
-						<Project
 							title="CourseTable"
-							description="https://devpost.com/software/spreading-the-movement Divide details about your product or agency work into parts. Write a few lines about each one. A paragraph describing a feature will be enough."
+							description={
+								"Yale's most popular course search tool, now maintained and developed by Yale Computer Society."
+							}
 							imgs={[
 								[
 									ct,
@@ -70,27 +61,38 @@ export default function Projects() {
 							vertical
 						/>
 						<Project
-							title="Spreading the Movement"
-							description="https://devpost.com/software/spreading-the-movement Divide details about your product or agency work into parts. Write a few lines about each one. A paragraph describing a feature will be enough."
+							title="SEL Slackbot"
+							description="A Slack bot to collect status reports from lab students, provide encouragement, and spur friendly competition."
 							imgs={[
-								[
-									blm,
-									"https://devpost.com/software/spreading-the-movement",
-								],
-								[messenger, "https://m.me/BLMtest"],
+								[slack, ""],
+								[sel, "https://nmardoin.people.stanford.edu/"],
 							]}
 							iconColor="info"
 							vertical
 						/>
 						<Project
-							title="Carbon Footprint Tracker"
-							description=" Divide details about your product or agency work into parts. Write a few lines about each one. A paragraph describing bout your product or agency work into parts. Write a few lines about each one. A paragraph describing a feature will be enough."
+							title="EnvYou"
+							description="A social media platform to incentivize people to be more aware of their carbon footprint and actively reduce it.
+							"
 							imgs={[
 								[
 									callforcode,
 									"https://developer.ibm.com/callforcode/",
 								],
 								[bee, ""],
+							]}
+							iconColor="info"
+							vertical
+						/>
+						<Project
+							title="Spreading the Movement"
+							description="A Messenger Bot that guides Facebook users to ways they can help support a movement, whether it be financially, socially, or physically."
+							imgs={[
+								[
+									blm,
+									"https://devpost.com/software/spreading-the-movement",
+								],
+								[messenger, "https://m.me/BLMtest"],
 							]}
 							iconColor="info"
 							vertical
@@ -102,9 +104,17 @@ export default function Projects() {
 							md={12}
 							justify="center"
 						>
+							<div className={classes.space30} />
+						</GridItem>
+						<GridItem
+							container
+							xs={12}
+							sm={12}
+							md={12}
+							justify="center"
+						>
 							<h3>See more here:</h3>
 						</GridItem>
-						<div className={classes.space50} />
 						<GridItem
 							container
 							xs={12}
@@ -141,7 +151,7 @@ export default function Projects() {
 							<Button
 								color="resume"
 								size="lg"
-								href="https://drive.google.com/file/d/1xKZ6UIQjhQdp161N04j7E_qAWUfkctQi/view?usp=sharing"
+								href="/resume.pdf"
 								target="_blank"
 							>
 								<DescriptionIcon /> Resume

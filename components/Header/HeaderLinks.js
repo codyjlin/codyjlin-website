@@ -106,7 +106,7 @@ export default function HeaderLinks(props) {
 				>
 					<Button
 						color="transparent"
-						href="https://drive.google.com/file/d/1xKZ6UIQjhQdp161N04j7E_qAWUfkctQi/view?usp=sharing"
+						href="/resume.pdf"
 						target="_blank"
 						className={classes.navLink}
 					>

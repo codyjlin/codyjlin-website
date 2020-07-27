@@ -20,6 +20,12 @@ import im3 from "assets/img/food/3.jpg";
 import im4 from "assets/img/food/4.jpg";
 import im5 from "assets/img/food/5.jpg";
 
+// assets/imgs
+import importAll from "public/importAll.js";
+const imgs = importAll(
+	require.context("assets/img/index/intro", false, /.jpg/)
+);
+
 const useStyles = makeStyles(styles);
 
 export default function IntroCarousel() {
@@ -69,26 +75,15 @@ export default function IntroCarousel() {
 						className={classes.marginAuto}
 					>
 						<Slider {...settings}>
-							<img
-								src={im1}
-								alt="First slide"
-								className={imageClasses}
-							/>
-							<img
-								src={im1}
-								alt="First slide"
-								className={imageClasses}
-							/>
-							<img
-								src={im2}
-								alt="First slide"
-								className={imageClasses}
-							/>
-							<img
-								src={im3}
-								alt="Third slide"
-								className={imageClasses}
-							/>
+							{Object.keys(imgs).map((key, index) => {
+								return (
+									<img
+										alt="..."
+										src={imgs[key]}
+										className={imageClasses}
+									/>
+								);
+							})}
 						</Slider>
 					</GridItem>
 				</GridContainer>

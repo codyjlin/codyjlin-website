@@ -44,7 +44,7 @@ const spotlightStyle = {
 	},
 	...imagesStyle,
 	main: {
-		background: "#FFFFFF",
+		background: "#FFFFFF", // @codyjlin change background color ("#e6f1ff")
 		position: "relative",
 		zIndex: "3",
 	},

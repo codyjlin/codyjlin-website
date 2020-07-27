@@ -41,7 +41,7 @@ class Index extends Component {
 							color: "info",
 						}}
 					/>
-					<Parallax image={require("assets/img/bg2.jpg")}>
+					<Parallax image={require("assets/img/bg.jpg")}>
 						<div className={classes.container}>
 							<GridContainer>
 								<GridItem>
@@ -50,7 +50,10 @@ class Index extends Component {
 											Hi, I'm Cody.
 										</h1>
 										<h3 className={classes.subtitle}>
-											Short intro description here.
+											I'm a college student, tennis
+											player, tech enthusiast, nature
+											lover, foodie, and coder (no pun
+											intended).
 										</h3>
 									</div>
 								</GridItem>
