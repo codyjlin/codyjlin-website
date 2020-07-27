@@ -57,7 +57,7 @@ export default function Footer(props) {
 						</ListItem>
 						<ListItem className={classes.inlineBlock}>
 							<a
-								href="/resume.pdf"
+								href="https://drive.google.com/file/d/1xKZ6UIQjhQdp161N04j7E_qAWUfkctQi/view?usp=sharing"
 								className={classes.block}
 								target="_blank"
 							>

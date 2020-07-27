@@ -151,7 +151,7 @@ export default function Projects() {
 							<Button
 								color="resume"
 								size="lg"
-								href="/resume.pdf"
+								href="https://drive.google.com/file/d/1xKZ6UIQjhQdp161N04j7E_qAWUfkctQi/view?usp=sharing"
 								target="_blank"
 							>
 								<DescriptionIcon /> Resume
