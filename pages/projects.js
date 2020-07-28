@@ -151,7 +151,7 @@ export default function ProjectsPage(props) {
 									"A social media platform to incentivize people to reduce their carbon footprint."
 								}
 								why={
-									"A randomly selected group of fellow interns and I built an MVP for a platform that would help people be more aware of their carbon footprint and actively reduce it. Our submission was voted _ place in the 2020 IBM North America Summer Intern Hackathon under the Climate Change theme."
+									"A randomly selected group of fellow interns and I built an MVP for a platform that would help people be more aware of their carbon footprint and actively reduce it. Our submission was voted 1st place in the 2020 IBM North America Summer Intern Hackathon under the Climate Change theme."
 								}
 								imgs={[
 									[

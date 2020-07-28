@@ -54,10 +54,6 @@ import joshua from "assets/img/travel/covers/joshua.jpg";
 const joshuas = importAll(
 	require.context("assets/img/travel/joshua", false, /.jpg/)
 );
-import davis from "assets/img/travel/covers/davis.jpg";
-const daviss = importAll(
-	require.context("assets/img/travel/davis", false, /.jpg/)
-);
 import france from "assets/img/travel/covers/france.jpg";
 const frances = importAll(
 	require.context("assets/img/travel/france", false, /.jpg/)
@@ -74,10 +70,6 @@ import bay19 from "assets/img/travel/covers/bay19.jpg";
 const bay19s = importAll(
 	require.context("assets/img/travel/bay19", false, /.jpg/)
 );
-import miami from "assets/img/travel/covers/miami.jpg";
-const miamis = importAll(
-	require.context("assets/img/travel/miami", false, /.jpg/)
-);
 import caribbean from "assets/img/travel/covers/caribbean.jpg";
 const caribbeans = importAll(
 	require.context("assets/img/travel/caribbean", false, /.jpg/)
@@ -88,8 +80,6 @@ import tahoe20 from "assets/img/travel/covers/tahoe20.jpg";
 const tahoe20s = importAll(
 	require.context("assets/img/travel/tahoe20", false, /.jpg/)
 );
-import sd from "assets/img/travel/covers/sd.jpg";
-const sds = importAll(require.context("assets/img/travel/sd", false, /.jpg/));
 import styles from "assets/jss/spotlightPage.js";
 
 const useStyles = makeStyles(styles);
@@ -166,12 +156,6 @@ export default function TravelPage(props) {
 							</div>
 							<GridContainer>
 								<Travel
-									name="San Diego"
-									setting="San Diego, CA | 2020"
-									cover={sd}
-									imgs={sds}
-								/>
-								<Travel
 									name="Lake Tahoe"
 									setting="Lake Tahoe, NV | 2020"
 									cover={tahoe20}
@@ -188,12 +172,6 @@ export default function TravelPage(props) {
 									setting="Honduras, Belize, Mexico | 2019"
 									cover={caribbean}
 									imgs={caribbeans}
-								/>
-								<Travel
-									name="Miami"
-									setting="Miami, FL | 2019"
-									cover={miami}
-									imgs={miamis}
 								/>
 								<Travel
 									name="The Bay"
@@ -218,12 +196,6 @@ export default function TravelPage(props) {
 									setting="France | 2019"
 									cover={france}
 									imgs={frances}
-								/>
-								<Travel
-									name="UC Davis"
-									setting="Davis, CA | 2019"
-									cover={davis}
-									imgs={daviss}
 								/>
 								<Travel
 									name="Joshua Tree Nat. Park"
