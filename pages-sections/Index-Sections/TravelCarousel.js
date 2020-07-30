@@ -14,7 +14,7 @@ import Card from "components/Card/Card.js";
 // assets/imgs
 import importAll from "common/importAll.js";
 const imgs = importAll(
-	require.context("assets/img/index/travel", false, /.jpg/)
+	require.context("../../pages/images/index/travel?webp", false, /.jpg/)
 );
 
 var locations = {
@@ -45,6 +45,18 @@ export default function TravelCarousel() {
 		slidesToShow: 1,
 		slidesToScroll: 1,
 		autoplay: true,
+		responsive: [
+			{
+				breakpoint: 768,
+				settings: {
+					dots: false,
+				},
+			},
+			{
+				breakpoint: 768,
+				settings: "unslick",
+			},
+		],
 	};
 	return (
 		<div className={classes.section}>

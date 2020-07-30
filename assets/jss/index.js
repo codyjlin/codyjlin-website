@@ -12,7 +12,7 @@ const componentsStyle = {
 	},
 	title: {
 		fontFamily: `"Miriam Libre", sans-serif`,
-		fontSize: "6.2rem",
+		fontSize: "5.2rem",
 		fontWeight: "600",
 		display: "inline-block",
 		position: "relative",
