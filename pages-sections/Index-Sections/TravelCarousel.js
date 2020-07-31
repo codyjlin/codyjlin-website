@@ -45,6 +45,18 @@ export default function TravelCarousel() {
 		slidesToShow: 1,
 		slidesToScroll: 1,
 		autoplay: true,
+		responsive: [
+			{
+				breakpoint: 768,
+				settings: {
+					dots: false,
+				},
+			},
+			{
+				breakpoint: 768,
+				settings: "unslick",
+			},
+		],
 	};
 	return (
 		<div className={classes.section}>
