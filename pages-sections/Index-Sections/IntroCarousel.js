@@ -16,7 +16,7 @@ import styles from "assets/jss/Index-Sections/IntroCarousel.js";
 // assets/imgs
 import importAll from "common/importAll.js";
 const imgs = importAll(
-	require.context("assets/img/index/intro", false, /.jpg/)
+	require.context("../../pages/images/index/intro", false, /.jpg/)
 );
 
 const useStyles = makeStyles(styles);
