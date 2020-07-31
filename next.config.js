@@ -4,12 +4,9 @@ const webpack = require("webpack");
 const path = require("path");
 const withOptimizedImages = require("next-optimized-images");
 
-module.exports = withPlugins(
-	[[withSass], [withOptimizedImages, { optimizeImagesInDev: true }]],
-	{
-		webpack(config, options) {
-			config.resolve.modules.push(path.resolve("./"));
-			return config;
-		},
-	}
-);
+module.exports = withPlugins([[withSass], [withOptimizedImages]], {
+	webpack(config, options) {
+		config.resolve.modules.push(path.resolve("./"));
+		return config;
+	},
+});
