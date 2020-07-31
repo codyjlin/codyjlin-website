@@ -41,7 +41,7 @@ class Index extends Component {
 							color: "info",
 						}}
 					/>
-					<Parallax image={require("./images/bg.jpg?webp")}>
+					<Parallax image={require("./images/bg.jpg")}>
 						<div className={classes.container}>
 							<GridContainer>
 								<GridItem>

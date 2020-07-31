@@ -20,67 +20,65 @@ import Travel from "pages-sections/Travel-Sections/Travel.js";
 
 // assets/imgs
 import importAll from "common/importAll.js";
-import profile from "./images/profiles/travel.jpg?webp";
+import profile from "./images/profiles/travel.jpg";
 
-import banff from "./images/travel/covers/banff.jpg?webp";
+import banff from "./images/travel/covers/banff.jpg";
 const banffs = importAll(
-	require.context("./images/travel/banff?webp", false, /.jpg/)
+	require.context("./images/travel/banff", false, /.jpg/)
 );
-import hawaii from "./images/travel/covers/hawaii.jpg?webp";
+import hawaii from "./images/travel/covers/hawaii.jpg";
 const hawaiis = importAll(
-	require.context("./images/travel/hawaii?webp", false, /.jpg/)
+	require.context("./images/travel/hawaii", false, /.jpg/)
 );
-import bay1718 from "./images/travel/covers/bay1718.jpg?webp";
+import bay1718 from "./images/travel/covers/bay1718.jpg";
 const bay1718s = importAll(
-	require.context("./images/travel/bay1718?webp", false, /.jpg/)
+	require.context("./images/travel/bay1718", false, /.jpg/)
 );
-import indianpond from "./images/travel/covers/indianpond.jpg?webp";
+import indianpond from "./images/travel/covers/indianpond.jpg";
 const indianponds = importAll(
-	require.context("./images/travel/indianpond?webp", false, /.jpg/)
+	require.context("./images/travel/indianpond", false, /.jpg/)
 );
-import acadia from "./images/travel/covers/acadia.jpg?webp";
+import acadia from "./images/travel/covers/acadia.jpg";
 const acadias = importAll(
-	require.context("./images/travel/acadia?webp", false, /.jpg/)
+	require.context("./images/travel/acadia", false, /.jpg/)
 );
-import newport from "./images/travel/covers/newport.jpg?webp";
+import newport from "./images/travel/covers/newport.jpg";
 const newports = importAll(
-	require.context("./images/travel/newport?webp", false, /.jpg/)
+	require.context("./images/travel/newport", false, /.jpg/)
 );
-import pismo from "./images/travel/covers/pismo.jpg?webp";
+import pismo from "./images/travel/covers/pismo.jpg";
 const pismos = importAll(
-	require.context("./images/travel/pismo?webp", false, /.jpg/)
+	require.context("./images/travel/pismo", false, /.jpg/)
 );
-import joshua from "./images/travel/covers/joshua.jpg?webp";
+import joshua from "./images/travel/covers/joshua.jpg";
 const joshuas = importAll(
-	require.context("./images/travel/joshua?webp", false, /.jpg/)
+	require.context("./images/travel/joshua", false, /.jpg/)
 );
-import france from "./images/travel/covers/france.jpg?webp";
+import france from "./images/travel/covers/france.jpg";
 const frances = importAll(
-	require.context("./images/travel/france?webp", false, /.jpg/)
+	require.context("./images/travel/france", false, /.jpg/)
 );
-import halfdome from "./images/travel/covers/halfdome.jpg?webp";
+import halfdome from "./images/travel/covers/halfdome.jpg";
 const halfdomes = importAll(
-	require.context("./images/travel/halfdome?webp", false, /.jpg/)
+	require.context("./images/travel/halfdome", false, /.jpg/)
 );
-import tahoe19 from "./images/travel/covers/tahoe19.jpg?webp";
+import tahoe19 from "./images/travel/covers/tahoe19.jpg";
 const tahoe19s = importAll(
-	require.context("./images/travel/tahoe19?webp", false, /.jpg/)
+	require.context("./images/travel/tahoe19", false, /.jpg/)
 );
-import bay19 from "./images/travel/covers/bay19.jpg?webp";
+import bay19 from "./images/travel/covers/bay19.jpg";
 const bay19s = importAll(
-	require.context("./images/travel/bay19?webp", false, /.jpg/)
+	require.context("./images/travel/bay19", false, /.jpg/)
 );
-import caribbean from "./images/travel/covers/caribbean.jpg?webp";
+import caribbean from "./images/travel/covers/caribbean.jpg";
 const caribbeans = importAll(
-	require.context("./images/travel/caribbean?webp", false, /.jpg/)
+	require.context("./images/travel/caribbean", false, /.jpg/)
 );
-import sb from "./images/travel/covers/sb.jpg?webp";
-const sbs = importAll(
-	require.context("./images/travel/sb?webp", false, /.jpg/)
-);
-import tahoe20 from "./images/travel/covers/tahoe20.jpg?webp";
+import sb from "./images/travel/covers/sb.jpg";
+const sbs = importAll(require.context("./images/travel/sb", false, /.jpg/));
+import tahoe20 from "./images/travel/covers/tahoe20.jpg";
 const tahoe20s = importAll(
-	require.context("./images/travel/tahoe20?webp", false, /.jpg/)
+	require.context("./images/travel/tahoe20", false, /.jpg/)
 );
 import styles from "assets/jss/spotlightPage.js";
 
@@ -121,7 +119,7 @@ export default function TravelPage(props) {
 				<Parallax
 					small
 					filter
-					image={require("./images/travel_bg.jpg?webp")}
+					image={require("./images/travel_bg.jpg")}
 				/>
 				<div className={classNames(classes.main, classes.mainRaised)}>
 					<div>

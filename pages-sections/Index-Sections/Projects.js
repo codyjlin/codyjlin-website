@@ -13,15 +13,15 @@ import Button from "components/CustomButtons/Button.js";
 import Project from "pages-sections/Index-Sections/Project.js";
 
 // assets/imgs
-import gendo from "../../pages/images/projects/gendo.png?webp";
-import slack from "../../pages/images/projects/slackbot_slack.png?webp";
-import sel from "../../pages/images/projects/slackbot_sel.png?webp";
-import ct from "../../pages/images/projects/coursetable_ct.png?webp";
-import y from "../../pages/images/projects/y_logo.png?webp";
-import messenger from "../../pages/images/projects/fb_hackathon_messenger.png?webp";
-import blm from "../../pages/images/projects/fb_hackathon_blm.png?webp";
-import bee from "../../pages/images/projects/bee.png?webp";
-import callforcode from "../../pages/images/projects/ibm_hackathon_call_for_code.png?webp";
+import gendo from "../../pages/images/projects/gendo.png";
+import slack from "../../pages/images/projects/slackbot_slack.png";
+import sel from "../../pages/images/projects/slackbot_sel.png";
+import ct from "../../pages/images/projects/coursetable_ct.png";
+import y from "../../pages/images/projects/y_logo.png";
+import messenger from "../../pages/images/projects/fb_hackathon_messenger.png";
+import blm from "../../pages/images/projects/fb_hackathon_blm.png";
+import bee from "../../pages/images/projects/bee.png";
+import callforcode from "../../pages/images/projects/ibm_hackathon_call_for_code.png";
 
 import styles from "assets/jss/Index-Sections/Projects.js";
 

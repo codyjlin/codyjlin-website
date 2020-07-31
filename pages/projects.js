@@ -17,18 +17,18 @@ import Parallax from "components/Parallax/Parallax.js";
 import Project from "pages-sections/Project-Sections/Project.js";
 
 // assets/imgs
-import profile from "./images/profiles/projects2.jpg?webp";
-import gendo from "./images/projects/gendo.png?webp";
-import slack from "./images/projects/slackbot_slack.png?webp";
-import stanford from "./images/projects/slackbot_stanford.png?webp";
-import sel from "./images/projects/slackbot_sel.png?webp";
-import ct from "./images/projects/coursetable_ct.png?webp";
-import y from "./images/projects/y_logo.png?webp";
-import messenger from "./images/projects/fb_hackathon_messenger.png?webp";
-import devpost from "./images/projects/fb_hackathon_devpost_icon.png?webp";
-import blm from "./images/projects/fb_hackathon_blm.png?webp";
-import bee from "./images/projects/bee.png?webp";
-import callforcode from "./images/projects/ibm_hackathon_call_for_code.png?webp";
+import profile from "./images/profiles/projects2.jpg";
+import gendo from "./images/projects/gendo.png";
+import slack from "./images/projects/slackbot_slack.png";
+import stanford from "./images/projects/slackbot_stanford.png";
+import sel from "./images/projects/slackbot_sel.png";
+import ct from "./images/projects/coursetable_ct.png";
+import y from "./images/projects/y_logo.png";
+import messenger from "./images/projects/fb_hackathon_messenger.png";
+import devpost from "./images/projects/fb_hackathon_devpost_icon.png";
+import blm from "./images/projects/fb_hackathon_blm.png";
+import bee from "./images/projects/bee.png";
+import callforcode from "./images/projects/ibm_hackathon_call_for_code.png";
 
 import styles from "assets/jss/spotlightPage.js";
 
@@ -61,7 +61,7 @@ export default function ProjectsPage(props) {
 				<Parallax
 					small
 					filter
-					image={require("./images/projects_bg.jpg?webp")}
+					image={require("./images/projects_bg.jpg")}
 				/>
 				<div className={classNames(classes.main, classes.mainRaised)}>
 					<div>
