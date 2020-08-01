@@ -14,7 +14,7 @@ import Card from "components/Card/Card.js";
 // images
 import importAll from "common/importAll.js";
 const imgs = importAll(
-	require.context("../../pages/images/index/travel", false, /.jpg/)
+	require.context("assets/img/index/travel", false, /.jpg/)
 );
 
 var locations = {
