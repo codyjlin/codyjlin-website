@@ -18,9 +18,9 @@ import HeaderLinks from "components/Header/HeaderLinks.js";
 import Parallax from "components/Parallax/Parallax.js";
 
 // assets/img
-import profile from "./images/profiles/cooking.jpg";
+import profile from "assets/img/profiles/cooking.jpg";
 import importAll from "common/importAll.js";
-const images = importAll(require.context("./images/food", false, /.jpg/));
+const images = importAll(require.context("assets/img/food", false, /.jpg/));
 
 import styles from "assets/jss/spotlightPage.js";
 
@@ -73,7 +73,7 @@ export default function CookingPage(props) {
 				<Parallax
 					small
 					filter
-					image={require("./images/cooking_bg.jpg")}
+					image={require("assets/img/cooking_bg.jpg")}
 				/>
 				<div className={classNames(classes.main, classes.mainRaised)}>
 					<div>
