@@ -12,7 +12,7 @@ import Button from "components/CustomButtons/Button.js";
 
 import Project from "pages-sections/Index-Sections/Project.js";
 
-// assets/imgs
+// images
 import gendo from "../../pages/images/projects/gendo.png";
 import slack from "../../pages/images/projects/slackbot_slack.png";
 import sel from "../../pages/images/projects/slackbot_sel.png";

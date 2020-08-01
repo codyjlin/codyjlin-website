@@ -13,7 +13,7 @@ import GridItem from "components/Grid/GridItem.js";
 
 import styles from "assets/jss/Index-Sections/IntroCarousel.js";
 
-// assets/imgs
+// images
 import importAll from "common/importAll.js";
 const imgs = importAll(
 	require.context("../../pages/images/index/intro", false, /.jpg/)

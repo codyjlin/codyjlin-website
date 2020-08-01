@@ -16,7 +16,7 @@ import HeaderLinks from "components/Header/HeaderLinks.js";
 import Parallax from "components/Parallax/Parallax.js";
 import Project from "pages-sections/Project-Sections/Project.js";
 
-// assets/imgs
+// images
 import profile from "./images/profiles/projects2.jpg";
 import gendo from "./images/projects/gendo.png";
 import slack from "./images/projects/slackbot_slack.png";

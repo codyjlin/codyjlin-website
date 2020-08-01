@@ -18,7 +18,7 @@ import Parallax from "components/Parallax/Parallax.js";
 
 import Travel from "pages-sections/Travel-Sections/Travel.js";
 
-// assets/imgs
+// images
 import importAll from "common/importAll.js";
 import profile from "./images/profiles/travel.jpg";
 

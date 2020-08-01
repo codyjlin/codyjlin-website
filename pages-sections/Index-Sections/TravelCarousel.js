@@ -11,7 +11,7 @@ import GridItem from "components/Grid/GridItem.js";
 import Card from "components/Card/Card.js";
 
 // 1.93 ratio images
-// assets/imgs
+// images
 import importAll from "common/importAll.js";
 const imgs = importAll(
 	require.context("../../pages/images/index/travel", false, /.jpg/)
