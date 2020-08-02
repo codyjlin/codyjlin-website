@@ -1,6 +1,6 @@
 const parallaxStyle = (theme) => ({
 	parallax: {
-		height: "74vh", // @codyjlin: height of Parallax
+		height: "77vh", // @codyjlin: height of Parallax
 		maxHeight: "1000px",
 		overflow: "hidden",
 		position: "relative",
