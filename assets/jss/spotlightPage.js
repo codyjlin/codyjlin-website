@@ -90,6 +90,52 @@ const spotlightStyle = {
 		position: "relative",
 		top: "3px",
 	},
+	travelCloseButton: {
+		width: "45px",
+		height: "45px",
+		color: "#999999",
+		WebkitAppearance: "none",
+		padding: "0",
+		cursor: "pointer",
+		background: "0 0",
+		border: "0",
+		fontSize: "inherit",
+		opacity: ".9",
+		textShadow: "none",
+		fontWeight: "700",
+		lineHeight: "1",
+		float: "right",
+	},
+	travelClose: {
+		width: "30px",
+		height: "30px",
+	},
+	imgHover: {
+		boxShadow:
+			"0 10px 30px -12px rgba(0, 0, 0, 0.42), 0 4px 25px 0px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2)",
+		transition: ".25s ease",
+		"&:hover": {
+			cursor: "pointer",
+			boxShadow:
+				"0 15px 35px -12px rgba(0, 0, 0, 0.72), 0 10px 30px 0px rgba(0, 0, 0, 0.42), 0 13px 15px -5px rgba(0, 0, 0, 0.5)",
+			opacity: "0.7",
+		},
+	},
+	projectLogo: {
+		maxHeight: "130px",
+		width: "auto",
+		objectFit: "contain",
+		padding: "20px 20px",
+		boxShadow:
+			"0 10px 30px -12px rgba(0, 0, 0, 0.42), 0 4px 25px 0px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2)",
+		transition: ".25s ease",
+		"&:hover": {
+			cursor: "pointer",
+			boxShadow:
+				"0 15px 35px -12px rgba(0, 0, 0, 0.72), 0 10px 30px 0px rgba(0, 0, 0, 0.42), 0 13px 15px -5px rgba(0, 0, 0, 0.5)",
+			opacity: "0.7",
+		},
+	},
 };
 
 export default spotlightStyle;

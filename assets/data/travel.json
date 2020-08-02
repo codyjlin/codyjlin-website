@@ -1,0 +1,77 @@
+[
+  {
+    "id": "tahoe20",
+    "name": "Lake Tahoe",
+    "setting": "Lake Tahoe, NV | 2020"
+  },
+  {
+    "id": "sb",
+    "name": "Santa Barbara",
+    "setting": "Santa Barbara, CA | 2020"
+  },
+  {
+    "id": "caribbean",
+    "name": "The Caribbean",
+    "setting": "Honduras, Belize, Mexico | 2019"
+  },
+  {
+    "id": "bay19",
+    "name": "The Bay",
+    "setting": "SF Bay, CA | 2019"
+  },
+  {
+    "id": "tahoe19",
+    "name": "Lake Tahoe",
+    "setting": "Lake Tahoe, CA/NV | 2019"
+  },
+  {
+    "id": "halfdome",
+    "name": "Half Dome",
+    "setting": "Yosemite Valley, CA | 2019"
+  },
+  {
+    "id": "france",
+    "name": "France",
+    "setting": "France | 2019"
+  },
+  {
+    "id": "joshua",
+    "name": "Joshua Tree Nat. Park",
+    "setting": "Twentynine Palms, CA | 2018"
+  },
+  {
+    "id": "pismo",
+    "name": "Pismo Beach",
+    "setting": "Pismo Beach, CA | 2018"
+  },
+  {
+    "id": "newport",
+    "name": "Newport",
+    "setting": "Newport, RI | 2018"
+  },
+  {
+    "id": "indianpond",
+    "name": "Indian Pond",
+    "setting": "St. Albans, ME | 2018"
+  },
+  {
+    "id": "acadia",
+    "name": "Acadia National Park",
+    "setting": "Bar Harbor, ME | 2018"
+  },
+  {
+    "id": "bay1718",
+    "name": "The Bay",
+    "setting": "SF Bay, CA | 2017, 2018"
+  },
+  {
+    "id": "hawaii",
+    "name": "Hawaii",
+    "setting": "Kauai + O'ahu, HI | 2016"
+  },
+  {
+    "id": "banff",
+    "name": "Banff National Park",
+    "setting": "Alberta, Canada | 2014"
+  }
+]

@@ -5,6 +5,7 @@ import classNames from "classnames";
 
 // @material-ui/core components
 import { makeStyles } from "@material-ui/core/styles";
+import Tooltip from "@material-ui/core/Tooltip";
 
 // core components
 import GridContainer from "components/Grid/GridContainer.js";
@@ -96,18 +97,19 @@ export default function Project(props) {
 								alignItems="center"
 							>
 								{(img[1] != "" && (
-									<a href={img[1]} target="_blank">
-										<img
-											alt="..."
-											src={img[0]}
-											style={{
-												maxHeight: "130px",
-												width: "auto",
-												objectFit: "contain",
-												padding: "20px 20px",
-											}}
-										/>
-									</a>
+									<Tooltip
+										title={img[2]}
+										placement={"bottom"}
+										classes={{ tooltip: classes.tooltip }}
+									>
+										<a href={img[1]} target="_blank">
+											<img
+												className={classes.projectLogo}
+												alt="..."
+												src={img[0]}
+											/>
+										</a>
+									</Tooltip>
 								)) || (
 									<img
 										alt="..."
@@ -122,12 +124,6 @@ export default function Project(props) {
 								)}
 							</GridItem>
 						))}
-
-						{/* <img
-							alt="..."
-							src={picture}
-							style={{ maxHeight: "200px", width: "auto" }}
-						/> */}
 					</GridItem>
 				</GridContainer>
 			</GridItem>

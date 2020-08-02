@@ -104,7 +104,13 @@ export default function ProjectsPage(props) {
 								why={
 									"With fewer opportunities to build professional non-academic skills as a result of the current pandemic, students are in need of internships more than ever. We match them with a collection of hand-picked partners."
 								}
-								imgs={[[gendo, "https://gendoit.org"]]}
+								imgs={[
+									[
+										gendo,
+										"https://gendoit.org",
+										"The GenDo website",
+									],
+								]}
 								color={"gendo"}
 							/>
 							<Project
@@ -119,6 +125,7 @@ export default function ProjectsPage(props) {
 									[
 										ct,
 										"https://github.com/coursetable/coursetable",
+										"The CourseTable repo.",
 									],
 									[y, ""],
 								]}
@@ -136,11 +143,13 @@ export default function ProjectsPage(props) {
 									[
 										slack,
 										"https://slack.com/help/articles/115005265703-Create-a-bot-for-your-workspace#:~:text=for%20your%20workspace-,Create%20a%20bot%20for%20your%20workspace,a%20bot%20for%20your%20workspace",
+										"What is a Slack Bot?",
 									],
 									[stanford, ""],
 									[
 										sel,
 										"https://nmardoin.people.stanford.edu/",
+										"The Social Ecology Lab",
 									],
 								]}
 								color={"stanford"}
@@ -157,6 +166,7 @@ export default function ProjectsPage(props) {
 									[
 										callforcode,
 										"https://developer.ibm.com/callforcode/",
+										"The public challenge",
 									],
 									[bee, ""],
 								]}
@@ -171,14 +181,16 @@ export default function ProjectsPage(props) {
 									"A couple classmates and I devoted a few weekends to build a meaningful Messenger experience as a submission to the 2020 Facebook Messenger Hackathon. Moved by the Black Lives Matter movement, we used Messenger features to build an engaging, informative bot to guide FB users to different ways to support the ongoing movement."
 								}
 								imgs={[
-									[messenger, "https://m.me/BLMtest"],
 									[
-										blm,
-										"https://devpost.com/software/spreading-the-movement",
+										messenger,
+										"https://m.me/BLMtest",
+										"Chat with the bot!",
 									],
+									[blm, ""],
 									[
 										devpost,
 										"https://devpost.com/software/spreading-the-movement",
+										"Our Devpost submission",
 									],
 								]}
 								color={"fb"}

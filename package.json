@@ -13,6 +13,7 @@
     "@material-ui/icons": "^4.9.1",
     "@zeit/next-sass": "^1.0.1",
     "classnames": "2.2.6",
+    "fs-extra": "^9.0.1",
     "moment": "2.25.3",
     "next": "9.3.6",
     "next-compose-plugins": "2.2.0",
