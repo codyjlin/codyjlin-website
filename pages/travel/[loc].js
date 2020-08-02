@@ -115,7 +115,7 @@ export default function Loc(props) {
 									justify="center"
 									direction="column"
 								>
-									<Link href="/travel">
+									<Link href="/travel" scroll={false}>
 										<IconButton
 											className={
 												classes.travelCloseButton
