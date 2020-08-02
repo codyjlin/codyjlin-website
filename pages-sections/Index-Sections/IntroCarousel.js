@@ -48,6 +48,7 @@ export default function IntroCarousel() {
 				breakpoint: 768,
 				settings: {
 					slidesToShow: 1,
+					dots: true,
 				},
 			},
 			{
@@ -71,6 +72,7 @@ export default function IntroCarousel() {
 							{Object.keys(imgs).map((key, index) => {
 								return (
 									<img
+										key={index}
 										alt="..."
 										src={imgs[key]}
 										className={imageClasses}

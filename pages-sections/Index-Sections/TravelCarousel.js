@@ -79,6 +79,7 @@ export default function TravelCarousel() {
 									return (
 										<div>
 											<img
+												key={key}
 												src={imgs[key]}
 												alt="..."
 												className="slick-image"

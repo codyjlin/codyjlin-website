@@ -43,6 +43,7 @@ export default function Travel(props) {
 						</b>
 						<br />
 						{setting}
+						<div className={classes.space20} />
 					</h4>
 				</div>
 			</GridItem>

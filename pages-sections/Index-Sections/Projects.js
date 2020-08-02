@@ -61,7 +61,7 @@ export default function Projects() {
 							vertical
 						/>
 						<Project
-							title="SEL Slackbot"
+							title="SEL Slack Bot"
 							description="A Slack bot to collect status reports from lab students, provide encouragement, and spur friendly competition."
 							imgs={[
 								[slack, ""],

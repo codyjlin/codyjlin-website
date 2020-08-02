@@ -60,7 +60,6 @@ class Index extends Component {
 							</GridContainer>
 						</div>
 					</Parallax>
-
 					<div
 						className={classNames(classes.main, classes.mainRaised)}
 					>

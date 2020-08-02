@@ -28,7 +28,7 @@ export default function Project(props) {
 	});
 	return (
 		<GridItem container xs={12} sm={6} md={4} justify="space-around">
-			{imgs.map((img) => (
+			{imgs.map((img, index) => (
 				<GridItem
 					container
 					xs={Math.floor(12 / imgs.length)}

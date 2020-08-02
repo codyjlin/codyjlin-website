@@ -1,6 +1,6 @@
 import React from "react";
 import Head from "next/head";
-import Link from "next/link";
+import Router from "next/router";
 
 import { readJsonSync } from "fs-extra";
 
@@ -44,8 +44,9 @@ export const getStaticProps = async ({ params }) => {
 	const loc = params?.loc;
 	const item = data.find(({ id }) => loc === `${id}`);
 
+	const cover = require(`assets/img/travel/covers/${loc}.jpg`);
 	const imgs = importAll(
-		require.context(`assets/img/travel`, true, /\.jpg$/)
+		require.context("assets/img/travel", true, /\.jpg$/)
 	);
 	const resultImgs = {};
 	for (const [key, value] of Object.entries(imgs)) {
@@ -53,6 +54,7 @@ export const getStaticProps = async ({ params }) => {
 	}
 	return {
 		props: {
+			cover: cover,
 			imgs: resultImgs,
 			name: item.name,
 			setting: item.setting,
@@ -62,9 +64,7 @@ export const getStaticProps = async ({ params }) => {
 
 export default function Loc(props) {
 	const classes = useStyles();
-	const { test, imgs, name, setting, ...rest } = props;
-
-	const cover = banff;
+	const { cover, imgs, name, setting, ...rest } = props;
 	const navImageClasses = classNames(classes.imgRounded, classes.imgGallery);
 
 	var col1 = {},
@@ -98,11 +98,7 @@ export default function Loc(props) {
 					}}
 					{...rest}
 				/>
-				<Parallax
-					small
-					filter
-					image={require("assets/img/travel_bg.jpg")}
-				/>
+				<Parallax small filter image={cover} />
 				<div className={classNames(classes.main, classes.mainRaised)}>
 					<div>
 						<div className={classes.container}>
@@ -115,20 +111,17 @@ export default function Loc(props) {
 									justify="center"
 									direction="column"
 								>
-									<Link href="/travel" scroll={false}>
-										<IconButton
-											className={
-												classes.travelCloseButton
-											}
-											key="close"
-											aria-label="Close"
-											color="primary"
-										>
-											<Close
-												className={classes.travelClose}
-											/>
-										</IconButton>
-									</Link>
+									<IconButton
+										className={classes.travelCloseButton}
+										key="close"
+										aria-label="Close"
+										color="primary"
+										onClick={() => Router.back()}
+									>
+										<Close
+											className={classes.travelClose}
+										/>
+									</IconButton>
 								</GridItem>
 
 								<GridItem

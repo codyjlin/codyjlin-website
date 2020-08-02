@@ -38,7 +38,7 @@ export default function Project(props) {
 							</h3>
 						</GridItem>
 						<GridItem xs={12} sm={12} md={12}>
-							<GridContainer justify="center">
+							<GridContainer>
 								<GridItem
 									container
 									xs={3}
@@ -58,7 +58,7 @@ export default function Project(props) {
 							</GridContainer>
 						</GridItem>
 						<GridItem xs={12} sm={12} md={12}>
-							<GridContainer justify="center">
+							<GridContainer>
 								<GridItem
 									container
 									xs={3}
@@ -84,15 +84,15 @@ export default function Project(props) {
 						xs={12}
 						sm={12}
 						md={5}
-						justify="center"
+						justify="space-around"
 						alignItems="center"
 					>
 						{imgs.map((img) => (
 							<GridItem
 								container
-								xs={Math.floor(12 / imgs.length)}
-								sm={Math.floor(12 / imgs.length)}
-								md={Math.floor(12 / imgs.length)}
+								xs={Math.floor(12 / imgs.length) - 1}
+								sm={Math.floor(12 / imgs.length) - 1}
+								md={Math.floor(12 / imgs.length) - 1}
 								justify="center"
 								alignItems="center"
 							>

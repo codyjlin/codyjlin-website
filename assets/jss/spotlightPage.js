@@ -21,6 +21,10 @@ const spotlightStyle = {
 			transform: "translate3d(0, -50%, 0)",
 		},
 	},
+	space20: {
+		height: "20px",
+		display: "block",
+	},
 	space30: {
 		height: "30px",
 		display: "block",
@@ -122,6 +126,7 @@ const spotlightStyle = {
 		},
 	},
 	projectLogo: {
+		borderRadius: "20px !important",
 		maxHeight: "130px",
 		width: "auto",
 		objectFit: "contain",
