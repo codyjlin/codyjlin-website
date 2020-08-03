@@ -26,7 +26,7 @@ export default function IntroCarousel() {
 	const imageClasses = classNames(classes.imgRounded, classes.imgFluid);
 	var settings = {
 		autoplay: true,
-		// dots: true,
+		autoplaySpeed: 1500,
 		arrows: false,
 		infinite: true,
 		speed: 500,
@@ -48,7 +48,7 @@ export default function IntroCarousel() {
 				breakpoint: 768,
 				settings: {
 					slidesToShow: 1,
-					dots: true,
+					arrows: true,
 				},
 			},
 			{

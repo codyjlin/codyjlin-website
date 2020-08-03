@@ -4,6 +4,7 @@ import Link from "next/link";
 // @material-ui/core components
 import { makeStyles } from "@material-ui/core/styles";
 import DescriptionIcon from "@material-ui/icons/Description";
+import { Build } from "@material-ui/icons";
 
 // core components
 import GridContainer from "components/Grid/GridContainer.js";
@@ -36,14 +37,13 @@ export default function Projects() {
 				<h2>
 					<b>Projects</b>
 				</h2>
+				<div className={classes.space50} />
 				<div>
 					<GridContainer>
 						<Project
 							title="Generation Do!"
 							description="A nonprofit initiative to connect students with meaningful projects at organizations solving real-world problems."
 							imgs={[[gendo, "https://gendoit.org"]]}
-							iconColor="info"
-							vertical
 						/>
 						<Project
 							title="CourseTable"
@@ -57,8 +57,6 @@ export default function Projects() {
 								],
 								[y, ""],
 							]}
-							iconColor="info"
-							vertical
 						/>
 						<Project
 							title="SEL Slack Bot"
@@ -67,8 +65,6 @@ export default function Projects() {
 								[slack, ""],
 								[sel, "https://nmardoin.people.stanford.edu/"],
 							]}
-							iconColor="info"
-							vertical
 						/>
 						<Project
 							title="EnvYou"
@@ -81,8 +77,6 @@ export default function Projects() {
 								],
 								[bee, ""],
 							]}
-							iconColor="info"
-							vertical
 						/>
 						<Project
 							title="Spreading the Movement"
@@ -94,8 +88,6 @@ export default function Projects() {
 								],
 								[messenger, "https://m.me/BLMtest"],
 							]}
-							iconColor="info"
-							vertical
 						/>
 						<GridItem
 							container
@@ -132,7 +124,7 @@ export default function Projects() {
 									className={
 										classes.socials + " fab fa-github"
 									}
-								/>{" "}
+								/>
 								GitHub
 							</Button>
 							<Button
@@ -145,7 +137,7 @@ export default function Projects() {
 									className={
 										classes.socials + " fab fa-linkedin"
 									}
-								/>{" "}
+								/>
 								LinkedIn
 							</Button>
 							<Button

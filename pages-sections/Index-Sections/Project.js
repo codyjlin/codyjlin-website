@@ -16,19 +16,10 @@ const useStyles = makeStyles(styles);
 
 export default function Project(props) {
 	const classes = useStyles();
-	const { title, description, iconColor, vertical, imgs } = props;
-	const iconWrapper = classNames({
-		[classes.iconWrapper]: true,
-		[classes[iconColor]]: true,
-		[classes.iconWrapperVertical]: vertical,
-	});
-	const iconClasses = classNames({
-		[classes.icon]: true,
-		[classes.iconVertical]: vertical,
-	});
+	const { title, description, imgs } = props;
 	return (
 		<GridItem container xs={12} sm={6} md={4} justify="space-around">
-			{imgs.map((img, index) => (
+			{imgs.map((img) => (
 				<GridItem
 					container
 					xs={Math.floor(12 / imgs.length)}
@@ -36,6 +27,7 @@ export default function Project(props) {
 					md={Math.floor(8 / imgs.length)}
 					justify="space-around"
 					alignItems="center"
+					spacing={5}
 				>
 					{(img[1] != "" && (
 						<a href={img[1]} target="_blank">
@@ -68,6 +60,7 @@ export default function Project(props) {
 			<GridItem>
 				<h3 className={classes.title}>{title}</h3>
 				<p className={classes.description}>{description}</p>
+				<div className={classes.space50} />
 			</GridItem>
 		</GridItem>
 	);
