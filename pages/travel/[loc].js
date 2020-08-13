@@ -140,7 +140,6 @@ export default function Loc(props) {
 								<GridItem xs={false} sm={1} md={1}>
 									<div />
 								</GridItem>
-
 								<GridItem xs={12} sm={12} md={6}>
 									{Object.keys(col1).map((key, index) => {
 										return (

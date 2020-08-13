@@ -10,21 +10,21 @@ export default class _404 extends Component {
 
 	render() {
 		return (
-			<div class="box">
-				<div class="box__ghost">
-					<div class="symbol"></div>
-					<div class="symbol"></div>
-					<div class="symbol"></div>
-					<div class="symbol"></div>
-					<div class="symbol"></div>
-					<div class="symbol"></div>
+			<div className="box">
+				<div className="box__ghost">
+					<div className="symbol"></div>
+					<div className="symbol"></div>
+					<div className="symbol"></div>
+					<div className="symbol"></div>
+					<div className="symbol"></div>
+					<div className="symbol"></div>
 
-					<div class="box__ghost-container">
-						<div class="box__ghost-eyes">
-							<div class="box__eye-left"></div>
-							<div class="box__eye-right"></div>
+					<div className="box__ghost-container">
+						<div className="box__ghost-eyes">
+							<div className="box__eye-left"></div>
+							<div className="box__eye-right"></div>
 						</div>
-						<div class="box__ghost-bottom">
+						<div className="box__ghost-bottom">
 							<div></div>
 							<div></div>
 							<div></div>
@@ -32,18 +32,18 @@ export default class _404 extends Component {
 							<div></div>
 						</div>
 					</div>
-					<div class="box__ghost-shadow"></div>
+					<div className="box__ghost-shadow"></div>
 				</div>
 
-				<div class="box__description">
-					<div class="box__description-container">
-						<div class="box__description-title">Whoops!</div>
-						<div class="box__description-text">
+				<div className="box__description">
+					<div className="box__description-container">
+						<div className="box__description-title">Whoops!</div>
+						<div className="box__description-text">
 							You've ventured to a ghost page.
 						</div>
 					</div>
 
-					<a href="/" class="box__button">
+					<a href="/" className="box__button">
 						Go home
 					</a>
 				</div>

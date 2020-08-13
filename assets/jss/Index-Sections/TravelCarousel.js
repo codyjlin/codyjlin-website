@@ -9,6 +9,13 @@ const carouselStyle = {
 		marginLeft: "auto !important",
 		marginRight: "auto !important",
 	},
+	linkTitle: {
+		cursor: "pointer",
+		transition: ".25s ease",
+		"&:hover": {
+			opacity: "0.8",
+		},
+	},
 };
 
 export default carouselStyle;

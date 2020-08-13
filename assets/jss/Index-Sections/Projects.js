@@ -16,6 +16,11 @@ const projectsStyle = {
 		marginTop: "30px",
 		minHeight: "32px",
 		textDecoration: "none",
+		cursor: "pointer",
+		transition: ".25s ease",
+		"&:hover": {
+			opacity: "0.8",
+		},
 	},
 	typo: {
 		paddingLeft: "25%",
@@ -45,6 +50,13 @@ const projectsStyle = {
 	},
 	sharingArea: {
 		marginTop: "80px",
+	},
+	linkTitle: {
+		cursor: "pointer",
+		transition: ".25s ease",
+		"&:hover": {
+			opacity: "0.8",
+		},
 	},
 };
 

@@ -141,6 +141,13 @@ const spotlightStyle = {
 			opacity: "0.7",
 		},
 	},
+	linkTitle: {
+		cursor: "pointer",
+		transition: ".25s ease",
+		"&:hover": {
+			opacity: "0.8",
+		},
+	},
 };
 
 export default spotlightStyle;

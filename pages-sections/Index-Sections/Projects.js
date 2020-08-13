@@ -34,60 +34,41 @@ export default function Projects() {
 		<div className={classes.section}>
 			<div className={classes.container}>
 				<hr />
-				<h2>
-					<b>Projects</b>
-				</h2>
+				<Link href="/projects">
+					<h2>
+						<b className={classes.linkTitle}>Projects</b>
+					</h2>
+				</Link>
 				<div className={classes.space50} />
 				<div>
 					<GridContainer>
 						<Project
 							title="Generation Do!"
 							description="A nonprofit initiative to connect students with meaningful projects at organizations solving real-world problems."
-							imgs={[[gendo, "https://gendoit.org"]]}
+							imgs={[gendo]}
 						/>
 						<Project
 							title="CourseTable"
 							description={
 								"Yale's most popular course search tool, now maintained and developed by Yale Computer Society."
 							}
-							imgs={[
-								[
-									ct,
-									"https://github.com/coursetable/coursetable",
-								],
-								[y, ""],
-							]}
+							imgs={[ct, y]}
 						/>
 						<Project
 							title="SEL Slack Bot"
 							description="A Slack bot to collect status reports from lab students, provide encouragement, and spur friendly competition."
-							imgs={[
-								[slack, ""],
-								[sel, "https://nmardoin.people.stanford.edu/"],
-							]}
+							imgs={[slack, sel]}
 						/>
 						<Project
 							title="EnvYou"
 							description="A social media platform to incentivize people to be more aware of their carbon footprint and actively reduce it.
 							"
-							imgs={[
-								[
-									callforcode,
-									"https://developer.ibm.com/callforcode/",
-								],
-								[bee, ""],
-							]}
+							imgs={[callforcode, bee]}
 						/>
 						<Project
 							title="Spreading the Movement"
 							description="A Messenger Bot that guides Facebook users to ways they can help support a movement, whether it be financially, socially, or physically."
-							imgs={[
-								[
-									blm,
-									"https://devpost.com/software/spreading-the-movement",
-								],
-								[messenger, "https://m.me/BLMtest"],
-							]}
+							imgs={[blm, messenger]}
 						/>
 						<GridItem
 							container
@@ -98,6 +79,19 @@ export default function Projects() {
 						>
 							<div className={classes.space30} />
 						</GridItem>
+						{/* <GridItem
+							container
+							xs={12}
+							sm={12}
+							md={12}
+							justify="center"
+						>
+							<h3>
+								See more on the{" "}
+								<b className={classes.linkTitle}>Projects</b>{" "}
+								page and below:
+							</h3>
+						</GridItem> */}
 						<GridItem
 							container
 							xs={12}
@@ -105,15 +99,12 @@ export default function Projects() {
 							md={12}
 							justify="center"
 						>
-							<h3>See more here:</h3>
-						</GridItem>
-						<GridItem
-							container
-							xs={12}
-							sm={12}
-							md={12}
-							justify="center"
-						>
+							<Link href="/projects">
+								<Button color="info" size="lg">
+									<Build className={classes.icons} /> More
+								</Button>
+							</Link>
+
 							<Button
 								color="github"
 								size="lg"

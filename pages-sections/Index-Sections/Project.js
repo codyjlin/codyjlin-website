@@ -1,13 +1,10 @@
 import React from "react";
-
-// nodejs library that concatenates classes
-import classNames from "classnames";
+import Link from "next/link";
 
 // @material-ui/core components
 import { makeStyles } from "@material-ui/core/styles";
 
 // core components
-import GridContainer from "components/Grid/GridContainer.js";
 import GridItem from "components/Grid/GridItem.js";
 
 import styles from "assets/jss/Index-Sections/Projects.js";
@@ -29,36 +26,22 @@ export default function Project(props) {
 					alignItems="center"
 					spacing={5}
 				>
-					{(img[1] != "" && (
-						<a href={img[1]} target="_blank">
-							<img
-								alt="..."
-								src={img[0]}
-								style={{
-									maxHeight: "130px",
-									width: "auto",
-									objectFit: "contain",
-									padding: "20px 20px",
-								}}
-							/>
-						</a>
-					)) || (
-						<img
-							alt="..."
-							src={img[0]}
-							style={{
-								maxHeight: "130px",
-								width: "auto",
-								objectFit: "contain",
-								padding: "20px 20px",
-							}}
-						/>
-					)}
+					<img
+						alt="..."
+						src={img}
+						style={{
+							maxHeight: "130px",
+							width: "auto",
+							objectFit: "contain",
+							padding: "20px 20px",
+						}}
+					/>
 				</GridItem>
 			))}
-
 			<GridItem>
-				<h3 className={classes.title}>{title}</h3>
+				<Link href="/projects">
+					<h3 className={classes.title}>{title}</h3>
+				</Link>
 				<p className={classes.description}>{description}</p>
 				<div className={classes.space50} />
 			</GridItem>

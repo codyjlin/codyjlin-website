@@ -1,4 +1,6 @@
 import React from "react";
+import Link from "next/link";
+
 // react component for creating beautiful carousel
 import Carousel from "react-slick";
 // @material-ui/core components
@@ -62,9 +64,11 @@ export default function TravelCarousel() {
 		<div className={classes.section}>
 			<div className={classes.container}>
 				<hr />
-				<h2>
-					<b>Travel</b>
-				</h2>
+				<Link href="/travel">
+					<h2>
+						<b className={classes.linkTitle}>Travel</b>
+					</h2>
+				</Link>
 				<GridContainer>
 					<GridItem
 						xs={12}
@@ -84,12 +88,18 @@ export default function TravelCarousel() {
 												alt="..."
 												className="slick-image"
 											/>
-											<div className="slick-caption">
-												<h3>
-													<LocationOn className="slick-icons" />
-													{locations[key]}
-												</h3>
-											</div>
+											<Link href="/travel">
+												<div className="slick-caption">
+													<h3
+														className={
+															classes.linkTitle
+														}
+													>
+														<LocationOn className="slick-icons" />
+														{locations[key]}
+													</h3>
+												</div>
+											</Link>
 										</div>
 									);
 								})}
