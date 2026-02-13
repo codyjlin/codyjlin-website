@@ -22,6 +22,7 @@ import Head from "next/head";
 import Router from "next/router";
 import CssBaseline from "@mui/material/CssBaseline";
 import { StyledEngineProvider, ThemeProvider } from "@mui/material/styles";
+import { ThemeProvider as StylesThemeProvider } from "@mui/styles";
 
 import PageChange from "components/PageChange/PageChange.js";
 import muiTheme from "common/muiTheme";
@@ -85,8 +86,10 @@ export default class MyApp extends App {
 				</Head>
 				<StyledEngineProvider injectFirst>
 					<ThemeProvider theme={muiTheme}>
-						<CssBaseline />
-						<Component {...pageProps} />
+						<StylesThemeProvider theme={muiTheme}>
+							<CssBaseline />
+							<Component {...pageProps} />
+						</StylesThemeProvider>
 					</ThemeProvider>
 				</StyledEngineProvider>
 			</React.Fragment>
