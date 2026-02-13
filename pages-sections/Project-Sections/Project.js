@@ -4,8 +4,8 @@ import React from "react";
 import classNames from "classnames";
 
 // @material-ui/core components
-import { makeStyles } from "@material-ui/core/styles";
-import Tooltip from "@material-ui/core/Tooltip";
+import { makeStyles } from "@mui/styles";
+import Tooltip from "@mui/material/Tooltip";
 
 // core components
 import GridContainer from "components/Grid/GridContainer.js";
@@ -24,7 +24,7 @@ export default function Project(props) {
 	return (
 		<GridContainer>
 			<GridItem xs={12} sm={12} md={12}>
-				<GridContainer justify="center">
+				<GridContainer justifyContent="center">
 					<GridItem
 						container
 						xs={12}
@@ -46,7 +46,7 @@ export default function Project(props) {
 									sm={3}
 									md={3}
 									alignItems="center"
-									justify="center"
+									justifyContent="center"
 								>
 									<Badge color={color}>What</Badge>
 								</GridItem>
@@ -66,7 +66,7 @@ export default function Project(props) {
 									sm={3}
 									md={3}
 									alignItems="center"
-									justify="center"
+									justifyContent="center"
 								>
 									<Badge color={color}>
 										{"\xa0"}Why{"\xa0"}
@@ -85,7 +85,7 @@ export default function Project(props) {
 						xs={12}
 						sm={12}
 						md={5}
-						justify="space-around"
+						justifyContent="space-around"
 						alignItems="center"
 					>
 						{imgs.map((img) => (
@@ -94,7 +94,7 @@ export default function Project(props) {
 								xs={Math.floor(12 / imgs.length) - 1}
 								sm={Math.floor(12 / imgs.length) - 1}
 								md={Math.floor(12 / imgs.length) - 1}
-								justify="center"
+								justifyContent="center"
 								alignItems="center"
 							>
 								{(img[1] != "" && (

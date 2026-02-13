@@ -8,11 +8,11 @@ import { readJsonSync } from "fs-extra";
 import classNames from "classnames";
 
 // @material-ui/core components
-import { makeStyles } from "@material-ui/core/styles";
-import IconButton from "@material-ui/core/IconButton";
+import { makeStyles } from "@mui/styles";
+import IconButton from "@mui/material/IconButton";
 
 // @material-ui/icons
-import Close from "@material-ui/icons/Close";
+import Close from "@mui/icons-material/Close";
 
 // core components
 import Header from "components/Header/Header.js";
@@ -103,13 +103,13 @@ export default function Loc(props) {
 				<div className={classNames(classes.main, classes.mainRaised)}>
 					<div>
 						<div className={classes.container}>
-							<GridContainer justify="center">
+							<GridContainer justifyContent="center">
 								<GridItem
 									container
 									xs={2}
 									sm={1}
 									md={1}
-									justify="center"
+									justifyContent="center"
 									direction="column"
 								>
 									<IconButton
@@ -130,7 +130,7 @@ export default function Loc(props) {
 									xs={10}
 									sm={10}
 									md={10}
-									justify="center"
+									justifyContent="center"
 								>
 									<h3 style={{ textAlign: "center" }}>
 										<b>{name}</b>

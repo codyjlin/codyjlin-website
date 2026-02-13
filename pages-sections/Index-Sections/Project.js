@@ -2,7 +2,7 @@ import React from "react";
 import Link from "next/link";
 
 // @material-ui/core components
-import { makeStyles } from "@material-ui/core/styles";
+import { makeStyles } from "@mui/styles";
 
 // core components
 import GridItem from "components/Grid/GridItem.js";
@@ -16,14 +16,14 @@ export default function Project(props) {
 	const classes = useStyles();
 	const { title, description, imgs } = props;
 	return (
-		<GridItem container xs={12} sm={6} md={4} justify="space-around">
+		<GridItem container xs={12} sm={6} md={4} justifyContent="space-around">
 			{imgs.map((img) => (
 				<GridItem
 					container
 					xs={Math.floor(12 / imgs.length)}
 					sm={Math.floor(12 / imgs.length)}
 					md={Math.floor(8 / imgs.length)}
-					justify="space-around"
+					justifyContent="space-around"
 					alignItems="center"
 					spacing={5}
 				>

@@ -4,7 +4,7 @@ import React from "react";
 import classNames from "classnames";
 
 // @material-ui/core components
-import { makeStyles } from "@material-ui/core/styles";
+import { makeStyles } from "@mui/styles";
 
 // core components
 import GridContainer from "components/Grid/GridContainer.js";
@@ -33,7 +33,7 @@ export default function Album(props) {
 				</h3>
 			</GridItem>
 			<GridItem xs={12} sm={12} md={12}>
-				<GridContainer justify="center">
+				<GridContainer justifyContent="center">
 					<GridItem
 						container
 						xs={12}
@@ -42,7 +42,7 @@ export default function Album(props) {
 						alignContent="space-around"
 					>
 						<GridItem xs={12} sm={12} md={12}>
-							<GridContainer justify="center">
+							<GridContainer justifyContent="center">
 								<GridItem xs={3} sm={3} md={3}>
 									<Badge color="primary">What</Badge>
 								</GridItem>
@@ -52,7 +52,7 @@ export default function Album(props) {
 							</GridContainer>
 						</GridItem>
 						<GridItem xs={12} sm={12} md={12}>
-							<GridContainer justify="center">
+							<GridContainer justifyContent="center">
 								<GridItem xs={3} sm={3} md={3}>
 									<Badge color="primary">
 										{"\xa0"}Why{"\xa0"}
@@ -65,7 +65,7 @@ export default function Album(props) {
 						</GridItem>
 					</GridItem>
 
-					<GridItem xs={12} sm={12} md={6} justify="center">
+					<GridItem xs={12} sm={12} md={6} justifyContent="center">
 						<img
 							alt="..."
 							src={getImageSrc(picture)}

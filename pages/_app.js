@@ -20,8 +20,11 @@ import ReactDOM from "react-dom";
 import App from "next/app";
 import Head from "next/head";
 import Router from "next/router";
+import CssBaseline from "@mui/material/CssBaseline";
+import { StyledEngineProvider, ThemeProvider } from "@mui/material/styles";
 
 import PageChange from "components/PageChange/PageChange.js";
+import muiTheme from "common/muiTheme";
 
 import "assets/scss/nextjs-material-kit.scss?v=1.1.0";
 import "assets/scss/404.scss";
@@ -80,7 +83,12 @@ export default class MyApp extends App {
 						rel="stylesheet"
 					></link>
 				</Head>
-				<Component {...pageProps} />
+				<StyledEngineProvider injectFirst>
+					<ThemeProvider theme={muiTheme}>
+						<CssBaseline />
+						<Component {...pageProps} />
+					</ThemeProvider>
+				</StyledEngineProvider>
 			</React.Fragment>
 		);
 	}

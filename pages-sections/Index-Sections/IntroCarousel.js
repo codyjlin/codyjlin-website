@@ -2,7 +2,7 @@ import React from "react";
 import Slider from "react-slick";
 
 // @material-ui/core components
-import { makeStyles } from "@material-ui/core/styles";
+import { makeStyles } from "@mui/styles";
 
 // nodejs library that concatenates classes
 import classNames from "classnames";

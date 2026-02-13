@@ -5,15 +5,15 @@ import PropTypes from "prop-types";
 // nodejs library that concatenates classes
 import classNames from "classnames";
 // material-ui core components
-import { List, ListItem } from "@material-ui/core";
-import { makeStyles } from "@material-ui/core/styles";
+import { List, ListItem } from "@mui/material";
+import { makeStyles } from "@mui/styles";
 
 // @material-ui/icons
-import Favorite from "@material-ui/icons/Favorite";
-import BorderColorIcon from "@material-ui/icons/BorderColor";
-import LinkedInIcon from "@material-ui/icons/LinkedIn";
-import DescriptionIcon from "@material-ui/icons/Description";
-import GitHubIcon from "@material-ui/icons/GitHub";
+import Favorite from "@mui/icons-material/Favorite";
+import BorderColorIcon from "@mui/icons-material/BorderColor";
+import LinkedInIcon from "@mui/icons-material/LinkedIn";
+import DescriptionIcon from "@mui/icons-material/Description";
+import GitHubIcon from "@mui/icons-material/GitHub";
 
 import styles from "assets/jss/nextjs-material-kit/components/footerStyle.js";
 

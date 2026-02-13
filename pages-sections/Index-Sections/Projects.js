@@ -2,9 +2,9 @@ import React from "react";
 import Link from "next/link";
 
 // @material-ui/core components
-import { makeStyles } from "@material-ui/core/styles";
-import DescriptionIcon from "@material-ui/icons/Description";
-import { Build } from "@material-ui/icons";
+import { makeStyles } from "@mui/styles";
+import DescriptionIcon from "@mui/icons-material/Description";
+import Build from "@mui/icons-material/Build";
 
 // core components
 import GridContainer from "components/Grid/GridContainer.js";
@@ -75,7 +75,7 @@ export default function Projects() {
 							xs={12}
 							sm={12}
 							md={12}
-							justify="center"
+							justifyContent="center"
 						>
 							<div className={classes.space30} />
 						</GridItem>
@@ -84,7 +84,7 @@ export default function Projects() {
 							xs={12}
 							sm={12}
 							md={12}
-							justify="center"
+							justifyContent="center"
 						>
 							<h3>
 								See more on the{" "}
@@ -97,7 +97,7 @@ export default function Projects() {
 							xs={12}
 							sm={12}
 							md={12}
-							justify="center"
+							justifyContent="center"
 						>
 							<Link href="/projects">
 								<Button color="info" size="lg">

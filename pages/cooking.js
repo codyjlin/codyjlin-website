@@ -5,9 +5,9 @@ import Head from "next/head";
 import classNames from "classnames";
 
 // @material-ui/core components
-import { makeStyles } from "@material-ui/core/styles";
-import Slide from "@material-ui/core/Slide";
-import Tooltip from "@material-ui/core/Tooltip";
+import { makeStyles } from "@mui/styles";
+import Slide from "@mui/material/Slide";
+import Tooltip from "@mui/material/Tooltip";
 
 // core components
 import Header from "components/Header/Header.js";
@@ -78,7 +78,7 @@ export default function CookingPage(props) {
 				<div className={classNames(classes.main, classes.mainRaised)}>
 					<div>
 						<div className={classes.container}>
-							<GridContainer justify="center">
+							<GridContainer justifyContent="center">
 								<GridItem xs={12} sm={12} md={6}>
 									<div className={classes.profile}>
 										<div>
@@ -106,7 +106,7 @@ export default function CookingPage(props) {
 								<br />
 							</div>
 
-							<GridContainer justify="center">
+							<GridContainer justifyContent="center">
 								<GridItem xs={12} sm={12} md={4}>
 									{Object.keys(col1).map((key, index) => {
 										return (

@@ -12,8 +12,11 @@
 		"install:clean": "rm -rf node_modules/ && rm -rf package-lock.json && rm -rf .next/ && npm install && npm run dev"
 	},
 	"dependencies": {
-		"@material-ui/core": "^4.9.13",
-		"@material-ui/icons": "^4.9.1",
+		"@emotion/react": "^11.14.0",
+		"@emotion/styled": "^11.14.0",
+		"@mui/icons-material": "^7.3.4",
+		"@mui/material": "^7.3.4",
+		"@mui/styles": "^6.4.8",
 		"classnames": "2.2.6",
 		"fs-extra": "^9.0.1",
 		"moment": "2.29.4",

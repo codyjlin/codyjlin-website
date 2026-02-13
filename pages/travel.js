@@ -7,7 +7,7 @@ import { readJsonSync } from "fs-extra";
 import classNames from "classnames";
 
 // @material-ui/core components
-import { makeStyles } from "@material-ui/core/styles";
+import { makeStyles } from "@mui/styles";
 
 // core components
 import Header from "components/Header/Header.js";
@@ -72,7 +72,7 @@ export default function TravelPage(props) {
 				<div className={classNames(classes.main, classes.mainRaised)}>
 					<div>
 						<div className={classes.container}>
-							<GridContainer justify="center">
+							<GridContainer justifyContent="center">
 								<GridItem xs={12} sm={12} md={6}>
 									<div className={classes.profile}>
 										<div>

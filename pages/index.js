@@ -5,7 +5,7 @@ import Head from "next/head";
 import classNames from "classnames";
 
 // @material-ui/core components
-import { withStyles } from "@material-ui/styles";
+import { withStyles } from "@mui/styles";
 
 // @material-ui/icons
 // core components

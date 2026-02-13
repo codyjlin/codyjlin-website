@@ -5,15 +5,15 @@ import classNames from "classnames";
 // nodejs library to set properties for components
 import PropTypes from "prop-types";
 // @material-ui/core components
-import { makeStyles } from "@material-ui/core/styles";
-import AppBar from "@material-ui/core/AppBar";
-import Toolbar from "@material-ui/core/Toolbar";
-import IconButton from "@material-ui/core/IconButton";
-import Button from "@material-ui/core/Button";
-import Hidden from "@material-ui/core/Hidden";
-import Drawer from "@material-ui/core/Drawer";
+import { makeStyles } from "@mui/styles";
+import AppBar from "@mui/material/AppBar";
+import Box from "@mui/material/Box";
+import Toolbar from "@mui/material/Toolbar";
+import IconButton from "@mui/material/IconButton";
+import Button from "@mui/material/Button";
+import Drawer from "@mui/material/Drawer";
 // @material-ui/icons
-import Menu from "@material-ui/icons/Menu";
+import Menu from "@mui/icons-material/Menu";
 // core components
 import styles from "assets/jss/nextjs-material-kit/components/headerStyle.js";
 
@@ -83,17 +83,17 @@ export default function Header(props) {
 				{leftLinks !== undefined ? brandComponent : null}
 				<div className={classes.flex}>
 					{leftLinks !== undefined ? (
-						<Hidden smDown implementation="css">
+						<Box sx={{ display: { xs: "none", md: "block" } }}>
 							{leftLinks}
-						</Hidden>
+						</Box>
 					) : (
 						brandComponent
 					)}
 				</div>
-				<Hidden smDown implementation="css">
+				<Box sx={{ display: { xs: "none", md: "block" } }}>
 					{rightLinks}
-				</Hidden>
-				<Hidden mdUp>
+				</Box>
+				<Box sx={{ display: { md: "none" } }}>
 					<IconButton
 						color="inherit"
 						aria-label="open drawer"
@@ -101,9 +101,9 @@ export default function Header(props) {
 					>
 						<Menu />
 					</IconButton>
-				</Hidden>
+				</Box>
 			</Toolbar>
-			<Hidden mdUp implementation="js">
+			<Box sx={{ display: { md: "none" } }}>
 				<Drawer
 					variant="temporary"
 					anchor={"right"}
@@ -118,12 +118,12 @@ export default function Header(props) {
 						{rightLinks}
 					</div>
 				</Drawer>
-			</Hidden>
+			</Box>
 		</AppBar>
 	);
 }
 
-Header.defaultProp = {
+Header.defaultProps = {
 	color: "white",
 };
 

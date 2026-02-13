@@ -3,18 +3,18 @@ import React from "react";
 import Link from "next/link";
 
 // @material-ui/core components
-import { makeStyles } from "@material-ui/core/styles";
-import List from "@material-ui/core/List";
-import ListItem from "@material-ui/core/ListItem";
-import Tooltip from "@material-ui/core/Tooltip";
+import { makeStyles } from "@mui/styles";
+import List from "@mui/material/List";
+import ListItem from "@mui/material/ListItem";
+import Tooltip from "@mui/material/Tooltip";
 
 // @material-ui/icons
-import { Build } from "@material-ui/icons";
-import FastfoodIcon from "@material-ui/icons/Fastfood";
-import CreateIcon from "@material-ui/icons/Create";
-import PublicIcon from "@material-ui/icons/Public";
-import LinkedInIcon from "@material-ui/icons/LinkedIn";
-import DescriptionIcon from "@material-ui/icons/Description";
+import Build from "@mui/icons-material/Build";
+import FastfoodIcon from "@mui/icons-material/Fastfood";
+import CreateIcon from "@mui/icons-material/Create";
+import PublicIcon from "@mui/icons-material/Public";
+import LinkedInIcon from "@mui/icons-material/LinkedIn";
+import DescriptionIcon from "@mui/icons-material/Description";
 
 // core components
 import CustomDropdown from "components/CustomDropdown/CustomDropdown.js";

@@ -5,10 +5,10 @@ import Link from "next/link";
 import classNames from "classnames";
 
 // @material-ui/core components
-import { makeStyles } from "@material-ui/core/styles";
+import { makeStyles } from "@mui/styles";
 
 // @material-ui/icons
-import LocationOn from "@material-ui/icons/LocationOn";
+import LocationOn from "@mui/icons-material/LocationOn";
 
 // core components
 import GridItem from "components/Grid/GridItem.js";
