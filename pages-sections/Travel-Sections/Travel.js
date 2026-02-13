@@ -12,6 +12,7 @@ import LocationOn from "@material-ui/icons/LocationOn";
 
 // core components
 import GridItem from "components/Grid/GridItem.js";
+import getImageSrc from "common/getImageSrc.js";
 
 import styles from "assets/jss/spotlightPage.js";
 
@@ -30,7 +31,7 @@ export default function Travel(props) {
 		<GridItem container xs={12} sm={6} md={4}>
 			<GridItem>
 				<Link href={`/travel/${loc}`}>
-					<img src={cover} className={imageClassesHover} />
+					<img src={getImageSrc(cover)} className={imageClassesHover} />
 				</Link>
 			</GridItem>
 

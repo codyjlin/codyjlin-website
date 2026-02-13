@@ -24,6 +24,7 @@ import Parallax from "components/Parallax/Parallax.js";
 
 // images
 import importAll from "common/importAll.js";
+import getImageSrc from "common/getImageSrc.js";
 
 import banff from "assets/img/travel/covers/banff.jpg";
 
@@ -44,7 +45,7 @@ export const getStaticProps = async ({ params }) => {
 	const loc = params?.loc;
 	const item = data.find(({ id }) => loc === `${id}`);
 
-	const cover = require(`assets/img/travel/covers/${loc}.jpg`);
+	const cover = getImageSrc(require(`assets/img/travel/covers/${loc}.jpg`));
 	const imgs = importAll(
 		require.context("assets/img/travel", true, /\.jpg$/)
 	);

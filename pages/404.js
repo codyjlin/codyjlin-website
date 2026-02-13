@@ -1,8 +1,6 @@
 import React, { Component } from "react";
 // import Router from "next/router";
 
-import "assets/scss/404.scss";
-
 export default class _404 extends Component {
 	componentDidMount = () => {
 		// Router.push("/components");

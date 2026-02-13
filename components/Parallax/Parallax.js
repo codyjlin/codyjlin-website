@@ -5,6 +5,7 @@ import classNames from "classnames";
 import PropTypes from "prop-types";
 // @material-ui/core components
 import { makeStyles } from "@material-ui/core/styles";
+import getImageSrc from "common/getImageSrc.js";
 
 // core components
 import styles from "assets/jss/nextjs-material-kit/components/parallaxStyle.js";
@@ -55,7 +56,7 @@ export default function Parallax(props) {
 			className={parallaxClasses}
 			style={{
 				...style,
-				backgroundImage: "url(" + image + ")",
+				backgroundImage: "url(" + getImageSrc(image) + ")",
 				transform: transform,
 			}}
 		>

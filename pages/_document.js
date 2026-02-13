@@ -11,29 +11,29 @@ class MyDocument extends Document {
 					<meta name="theme-color" content="#000000" />
 					<link
 						rel="shortcut icon"
-						href={require("public/favicon.png")}
+						href="/favicon.png"
 					/>
 					<link
 						rel="apple-touch-icon"
 						sizes="76x76"
-						href={require("public/favicon76.png")}
+						href="/favicon76.png"
 					/>
 					<link
 						rel="apple-touch-icon"
 						sizes="180x180"
-						href={require("public/favicon180.png")}
+						href="/favicon180.png"
 					/>
 					<link
 						rel="icon"
 						type="image/png"
 						sizes="32x32"
-						href={require("public/favicon32.png")}
+						href="/favicon32.png"
 					/>
 					<link
 						rel="icon"
 						type="image/png"
 						sizes="16x16"
-						href={require("public/favicon16.png")}
+						href="/favicon16.png"
 					/>
 
 					{/* Fonts and icons */}

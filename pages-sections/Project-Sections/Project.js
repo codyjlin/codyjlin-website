@@ -11,6 +11,7 @@ import Tooltip from "@material-ui/core/Tooltip";
 import GridContainer from "components/Grid/GridContainer.js";
 import GridItem from "components/Grid/GridItem.js";
 import Badge from "components/Badge/Badge.js";
+import getImageSrc from "common/getImageSrc.js";
 
 import styles from "assets/jss/spotlightPage.js";
 
@@ -106,14 +107,14 @@ export default function Project(props) {
 											<img
 												className={classes.projectLogo}
 												alt="..."
-												src={img[0]}
+												src={getImageSrc(img[0])}
 											/>
 										</a>
 									</Tooltip>
 								)) || (
 									<img
 										alt="..."
-										src={img[0]}
+										src={getImageSrc(img[0])}
 										style={{
 											maxHeight: "130px",
 											width: "auto",

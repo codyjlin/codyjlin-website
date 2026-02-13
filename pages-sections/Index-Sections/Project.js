@@ -6,6 +6,7 @@ import { makeStyles } from "@material-ui/core/styles";
 
 // core components
 import GridItem from "components/Grid/GridItem.js";
+import getImageSrc from "common/getImageSrc.js";
 
 import styles from "assets/jss/Index-Sections/Projects.js";
 
@@ -28,7 +29,7 @@ export default function Project(props) {
 				>
 					<img
 						alt="..."
-						src={img}
+						src={getImageSrc(img)}
 						style={{
 							maxHeight: "130px",
 							width: "auto",

@@ -28,6 +28,7 @@ import messenger from "assets/img/projects/fb_hackathon_messenger.png";
 import blm from "assets/img/projects/fb_hackathon_blm.png";
 import bee from "assets/img/projects/bee.png";
 import callforcode from "assets/img/projects/ibm_hackathon_call_for_code.png";
+import getImageSrc from "common/getImageSrc.js";
 
 import styles from "assets/jss/spotlightPage.js";
 
@@ -70,7 +71,7 @@ export default function ProjectsPage(props) {
 									<div className={classes.profile}>
 										<div>
 											<img
-												src={profile}
+												src={getImageSrc(profile)}
 												alt="..."
 												className={imageClasses}
 											/>
@@ -106,7 +107,7 @@ export default function ProjectsPage(props) {
 									}
 									imgs={[
 										[
-											gendo,
+											getImageSrc(gendo),
 											"https://gendoit.org",
 											"The GenDo website",
 										],
@@ -125,11 +126,11 @@ export default function ProjectsPage(props) {
 									}
 									imgs={[
 										[
-											ct,
+											getImageSrc(ct),
 											"https://github.com/coursetable/coursetable",
 											"The CourseTable repo.",
 										],
-										[y, ""],
+										[getImageSrc(y), ""],
 									]}
 									color={"coursetable"}
 								/>
@@ -144,9 +145,9 @@ export default function ProjectsPage(props) {
 										"Instead of manually checking in with students and keeping them engaged with their work, the instructor can rely on the Slack bot to automate these tasks and instead focus on outstanding blockers and individuals. It saves time and effort for both the instructor and students."
 									}
 									imgs={[
-										[slack, ""],
+										[getImageSrc(slack), ""],
 										[
-											sel,
+											getImageSrc(sel),
 											"https://nmardoin.people.stanford.edu/",
 											"The Social Ecology Lab",
 										],
@@ -165,11 +166,11 @@ export default function ProjectsPage(props) {
 									}
 									imgs={[
 										[
-											callforcode,
+											getImageSrc(callforcode),
 											"https://developer.ibm.com/callforcode/",
 											"The public challenge",
 										],
-										[bee, ""],
+										[getImageSrc(bee), ""],
 									]}
 									color={"ibm"}
 								/>
@@ -185,12 +186,12 @@ export default function ProjectsPage(props) {
 									}
 									imgs={[
 										[
-											messenger,
+											getImageSrc(messenger),
 											"https://m.me/BLMtest",
 											"Chat with the bot!",
 										],
 										[
-											blm,
+											getImageSrc(blm),
 											"https://devpost.com/software/spreading-the-movement",
 											"Our Devpost submission",
 										],

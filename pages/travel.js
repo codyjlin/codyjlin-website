@@ -21,6 +21,7 @@ import Travel from "pages-sections/Travel-Sections/Travel.js";
 
 // images
 import profile from "assets/img/profiles/travel.jpg";
+import getImageSrc from "common/getImageSrc.js";
 
 import styles from "assets/jss/spotlightPage.js";
 
@@ -76,7 +77,7 @@ export default function TravelPage(props) {
 									<div className={classes.profile}>
 										<div>
 											<img
-												src={profile}
+												src={getImageSrc(profile)}
 												alt="..."
 												className={imageClasses}
 											/>
@@ -107,7 +108,9 @@ export default function TravelPage(props) {
 										<Travel
 											name={item.name}
 											setting={item.setting}
-											cover={require(`assets/img/travel/covers/${item.id}.jpg`)}
+											cover={getImageSrc(
+												require(`assets/img/travel/covers/${item.id}.jpg`)
+											)}
 											loc={item.id}
 										/>
 									);

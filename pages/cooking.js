@@ -20,6 +20,7 @@ import Parallax from "components/Parallax/Parallax.js";
 // assets/img
 import profile from "assets/img/profiles/cooking.jpg";
 import importAll from "common/importAll.js";
+import getImageSrc from "common/getImageSrc.js";
 const images = importAll(require.context("assets/img/food", false, /.jpg/));
 
 import styles from "assets/jss/spotlightPage.js";
@@ -52,7 +53,6 @@ export default function CookingPage(props) {
 		}
 		i++;
 	}
-	console.log(col1, col2, col3);
 	return (
 		<React.Fragment>
 			<Head>
@@ -83,7 +83,7 @@ export default function CookingPage(props) {
 									<div className={classes.profile}>
 										<div>
 											<img
-												src={profile}
+												src={getImageSrc(profile)}
 												alt="..."
 												className={imageClasses}
 											/>

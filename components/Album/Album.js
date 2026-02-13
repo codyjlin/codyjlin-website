@@ -10,6 +10,7 @@ import { makeStyles } from "@material-ui/core/styles";
 import GridContainer from "components/Grid/GridContainer.js";
 import GridItem from "components/Grid/GridItem.js";
 import Badge from "components/Badge/Badge.js";
+import getImageSrc from "common/getImageSrc.js";
 
 import styles from "assets/jss/spotlightPage.js";
 
@@ -65,7 +66,11 @@ export default function Album(props) {
 					</GridItem>
 
 					<GridItem xs={12} sm={12} md={6} justify="center">
-						<img alt="..." src={picture} className={classes.imgFluid} />
+						<img
+							alt="..."
+							src={getImageSrc(picture)}
+							className={classes.imgFluid}
+						/>
 					</GridItem>
 				</GridContainer>
 			</GridItem>
