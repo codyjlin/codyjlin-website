@@ -29,7 +29,10 @@ export default function HeaderLinks(props) {
 	return (
 		<List className={classes.list}>
 			<ListItem className={classes.listItem}>
-				<Link href="/projects">
+				<Link
+					href="/projects"
+					style={{ color: "inherit", textDecoration: "none" }}
+				>
 					<Button // TODO: underline instead of change color
 						color={
 							(props.type == "projects" && "default") ||
@@ -42,7 +45,10 @@ export default function HeaderLinks(props) {
 				</Link>
 			</ListItem>
 			<ListItem className={classes.listItem}>
-				<Link href="/travel">
+				<Link
+					href="/travel"
+					style={{ color: "inherit", textDecoration: "none" }}
+				>
 					<Button
 						color={
 							(props.type == "travel" && "default") ||
@@ -55,7 +61,10 @@ export default function HeaderLinks(props) {
 				</Link>
 			</ListItem>
 			<ListItem className={classes.listItem}>
-				<Link href="/cooking">
+				<Link
+					href="/cooking"
+					style={{ color: "inherit", textDecoration: "none" }}
+				>
 					<Button
 						color={
 							(props.type == "cooking" && "default") ||

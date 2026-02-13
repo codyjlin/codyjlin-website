@@ -13,6 +13,7 @@ const badgeStyle = {
 		borderRadius: "12px",
 		padding: "15px 22px", // @codyjlin: size of badges
 		textTransform: "uppercase",
+		fontFamily: '"Roboto", "Helvetica", "Arial", sans-serif',
 		fontSize: "13px",
 		fontWeight: "500",
 		lineHeight: "1",
