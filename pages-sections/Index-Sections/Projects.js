@@ -3,7 +3,6 @@ import Link from "next/link";
 
 // @material-ui/core components
 import { makeStyles } from "@mui/styles";
-import DescriptionIcon from "@mui/icons-material/Description";
 import Build from "@mui/icons-material/Build";
 
 // core components
@@ -130,14 +129,6 @@ export default function Projects() {
 									}
 								/>
 								LinkedIn
-							</Button>
-							<Button
-								color="resume"
-								size="lg"
-								href="https://drive.google.com/file/d/1xKZ6UIQjhQdp161N04j7E_qAWUfkctQi/view?usp=sharing"
-								target="_blank"
-							>
-								<DescriptionIcon /> Resume
 							</Button>
 						</GridItem>
 					</GridContainer>

@@ -12,7 +12,6 @@ import { makeStyles } from "@mui/styles";
 import Favorite from "@mui/icons-material/Favorite";
 import BorderColorIcon from "@mui/icons-material/BorderColor";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
-import DescriptionIcon from "@mui/icons-material/Description";
 import GitHubIcon from "@mui/icons-material/GitHub";
 
 import styles from "assets/jss/nextjs-material-kit/components/footerStyle.js";
@@ -53,16 +52,6 @@ export default function Footer(props) {
 							>
 								<LinkedInIcon className={classes.icon} />{" "}
 								LinkedIn
-							</a>
-						</ListItem>
-						<ListItem className={classes.inlineBlock}>
-							<a
-								href="https://drive.google.com/file/d/1xKZ6UIQjhQdp161N04j7E_qAWUfkctQi/view?usp=sharing"
-								className={classes.block}
-								target="_blank"
-							>
-								<DescriptionIcon className={classes.icon} />{" "}
-								Resume
 							</a>
 						</ListItem>
 					</List>

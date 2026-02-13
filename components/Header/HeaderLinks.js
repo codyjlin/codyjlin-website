@@ -14,7 +14,6 @@ import FastfoodIcon from "@mui/icons-material/Fastfood";
 import CreateIcon from "@mui/icons-material/Create";
 import PublicIcon from "@mui/icons-material/Public";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
-import DescriptionIcon from "@mui/icons-material/Description";
 
 // core components
 import CustomDropdown from "components/CustomDropdown/CustomDropdown.js";
@@ -77,17 +76,6 @@ export default function HeaderLinks(props) {
 				</Link>
 			</ListItem>
 			{/* TODO: blog page? tennis page? */}
-			<ListItem className={classes.listItem}>
-				<Button
-					color="transparent"
-					// TODO: render .pdf file on site
-					href="https://drive.google.com/file/d/1xKZ6UIQjhQdp161N04j7E_qAWUfkctQi/view?usp=sharing"
-					target="_blank"
-					className={classes.navLink}
-				>
-					<DescriptionIcon className={classes.icons} /> Resume
-				</Button>
-			</ListItem>
 			<ListItem className={classes.listItem}>
 				<Tooltip
 					id="linkedin"
