@@ -50,10 +50,10 @@ class Index extends Component {
 											Hi, I'm Cody.
 										</h1>
 										<h3 className={classes.subtitle}>
-											I'm a college student, tennis
-											player, tech enthusiast, nature
-											lover, foodie, and coder (no pun
-											intended).
+											I'm a backend engineer in the Bay Area,  
+											ex-collegiate tennis player, nature
+											lover, and foodie. I like building things and 
+											solving problems.
 										</h3>
 									</div>
 								</GridItem>
